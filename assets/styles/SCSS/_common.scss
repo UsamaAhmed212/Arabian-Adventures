@@ -1,0 +1,20 @@
+// waved.scss
+@use 'waved' as *;
+@use 'variables' as *;
+
+// Waved Heading CSS
+.waved-heading {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -.025em;
+    @include waved;
+}
+
+// Subtitle
+.subtitle {
+    padding-bottom: .5rem;
+    font-weight: bold;
+    font-size: 18px;
+    font-size: 16px;
+}
+

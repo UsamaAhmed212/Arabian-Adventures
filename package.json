@@ -1,0 +1,36 @@
+{
+  "name": "Arabian_Adventures",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "scripts": {
+    "nodemon": "cross-env NODE_ENV=development nodemon index.js",
+    "nodemon-pro": "cross-env NODE_ENV=production nodemon index.js",
+    "gulp": "gulp dev",
+    "gulp-pro": "gulp build",
+    "start": "npm-run-all --parallel nodemon gulp",
+    "start-all": "npm-run-all --parallel nodemon gulp"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "browser-sync": "^3.0.3",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.6",
+    "gulp": "^5.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-jshint": "^2.1.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "jshint": "^2.13.6",
+    "jshint-stylish": "^2.2.1",
+    "nodemon": "^3.1.9",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.5.3",
+    "sass": "^1.81.0"
+  }
+}

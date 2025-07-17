@@ -1,0 +1,354 @@
+// Import external files and variables
+@use 'variables' as *;
+@use 'common' as *;
+@use 'slider' as *;
+
+/* Slider Area Css */
+@include slider;
+
+/* Adventures Area Css */
+#adventures {
+    // font-family: emirates;
+    background: $default_color;
+
+    .waved-heading {
+        > span:not(.waved) {
+            color: #928259;
+        }
+    }
+
+    .subtitle {
+        // font-size: 16px;
+    }
+
+    .single-adventure {
+        position: relative;
+
+        .adventure-img {
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 165px;
+            height: 165px;
+            border-radius: 50%;
+            background-color: #1a213d80;
+            transition: all .4s ease-out 0s;
+            z-index: 0;
+            overflow: hidden;
+
+            &::before {
+                content: "";
+                width: 100%;
+                height: 100%;
+                transition: all .4s ease-out 0s;
+                position: absolute;
+                bottom: 0;
+                background: rgba(26, 33, 61, 0.5);
+                z-index: 1;
+                opacity: 0;
+                visibility: hidden;
+            }
+            
+            &::after {
+                content: "";
+                position: absolute;
+                width: 92%;
+                height: 91%;
+                border: 2px dotted $default_color;
+                border-radius: 50%;
+                opacity: 0;
+                transition: all .4s ease-out 0s;
+                animation: rotateme 30s linear infinite;
+                z-index: 1;
+                visibility: hidden;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: scale(1);
+                transition: all .4s ease-out 0s;
+            }
+
+            .adventure-details {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                right: 0;
+                text-align: center;
+                margin: 0 auto;
+                transition: all .4s ease-out 0s;
+                opacity: 0;
+                z-index: 2;
+                visibility: hidden;
+
+                h4 {
+
+                    a {
+                        display: inline-block;
+                        color: $default_color;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 1;
+                        letter-spacing: 1.1px;
+                        text-decoration: none;
+
+                        svg {
+                            width: 14px;
+                            height: 14px;
+                            fill: $default_color;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        h3 {
+            
+            a {
+                display: block;
+                padding-top: 16px;
+                font-size: 22px;
+                font-weight: 600;
+                color: #1A213D;
+                text-decoration: none;
+            }
+        }
+
+        &:hover {
+            .adventure-img::before,
+            .adventure-img::after,
+            .adventure-details {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .adventure-img {
+                box-shadow: 0 10px 20px rgba(26, 33, 61, 0.12);
+                
+                img {
+                    transform: scale(1.05);
+                }
+            }
+
+        }
+    }
+}
+
+@keyframes rotateme {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rotateme {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+/* Top Tours Area Css */
+.waved-heading {
+    > span:not(.waved) {
+        color: #928259;
+    }
+}
+
+.top-tours {
+    .tour {
+        height: 100%;
+        border: 1px solid #eee;
+        border-radius: 12px;
+        overflow: hidden;
+        margin: 0 7px;
+        margin-bottom: 16px;
+        transition: all .3s ease;
+
+        a {
+            text-decoration: none;
+        }
+
+        .thumbnail {
+            position: relative;
+
+             img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+            }
+
+            .category {
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.65));
+                width: 100%;
+                color: #FFFFFF;
+                font-size: 12px;
+                padding: 4px 8px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: 2;
+            }
+        }
+
+        .details {
+            margin: 2px 0;
+            padding: 0 16px 10px;
+            color: rgb(102, 102, 102);
+            
+            .label {
+                font-size: 13px;
+                font-weight: 600;
+                font-style: normal;
+                line-height: 16px;
+                letter-spacing: 0px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .title {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 21px;
+                margin: 0;
+
+                strong {
+                    color: rgb(68, 68, 68);
+                    font-size: inherit;
+                    font-weight: inherit;
+                }
+            }
+
+            .tour-info {
+                margin-top: 4px;
+
+                .duration {
+                    font-size: 13px;
+                    font-weight: bold;
+
+                    svg {
+                        height: 15px;
+                        margin-right: 1px;
+                        margin-bottom: 2px;
+                    }
+                }
+
+                .tagging-wrap {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+                    margin-top: 4px;
+
+                    .tagging {
+                        background-color: #f0f0f0;
+                        color: #666;
+                        padding: 2px 6px;
+                        font-size: 12px;
+                        font-weight: 500;
+                        border-radius: 2px;
+                        border: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+
+            .price {
+                margin-top: 4px;
+                font-size: 16px;
+                font-weight: 600;
+
+
+                .old-price {
+                    margin-right: 5px;
+
+                    .label {
+                        font-size: 14px;
+                    }
+                    
+                    .price {
+                        text-decoration: line-through;
+                        font-size: 14px;
+                    }
+                }
+
+                .activity-price {
+                    .price {
+                        font-size: 18px;
+                        color: #C81E3A;
+                        color: #333;
+                        font-weight: bold;
+                    }
+
+                    .caption {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .tagging-wrap {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                margin: 4px 0;
+
+                .tagging {
+                    padding: 1px;
+                    font-size: 14px;
+                    line-height: 18px;
+                    height: 20px;
+                    font-weight: 400;
+                    border-radius: 2px;
+                    color: #f44622;
+                    box-shadow: inset 0 0 0 1px rgba(244, 70, 34, .4);
+
+                    .tag-content {
+                        padding: 0 4px;
+                    }
+
+                    .vertical-promo-tag {
+                        padding-right: 4px;
+                        padding-left: 1.42em;
+                        background-color: rgba(244, 70, 34, .2);
+                        margin-left: -3px;
+                        float: right;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        max-width: 100%;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        background-image: radial-gradient(circle at .9em center, #fff .22em, transparent 0), linear-gradient(125deg, #fff .68em, transparent 0), linear-gradient(55deg, #fff .68em, transparent 0);
+
+                        .svg-percent {
+                            width: 12px;
+                            height: 12px;
+                            vertical-align: middle;
+                            margin-left: 1px;
+                            margin-top: -2px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    }
+}

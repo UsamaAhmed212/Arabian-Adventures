@@ -1,0 +1,70 @@
+.waved-heading {
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: -0.025em;
+}
+.waved-heading .waved {
+  padding-left: 3px;
+  color: #ffffff;
+}
+.waved-heading .waved > span {
+  position: relative;
+  display: inline-block;
+}
+.waved-heading .waved > span > span {
+  position: relative;
+  z-index: 2;
+}
+.waved-heading .waved > span::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  height: 100%;
+  border-radius: 50%;
+  translate: -50% -50%;
+  transform: skew(-20deg);
+  background: #ed2939;
+}
+
+.subtitle {
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html body {
+  font-family: "Trip Sans VF", "Trip Sans", "Trip Sans Mono", Arial, sans-serif;
+}
+
+#header #navbarNav ul li a {
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+#header a.navbar-brand {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  max-width: 150px;
+  min-height: 35px;
+}
+#header a.navbar-brand img {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

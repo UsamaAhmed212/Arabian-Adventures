@@ -3,10 +3,694 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title Bar Icon -->
+    <link rel="icon" href="./assets/images/cropped-arabian-desert-adventures-favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" href="./assets/images/cropped-arabian-desert-adventures-favicon-192x192.png" sizes="192x192" />
+    
+    <!-- Fonts  -->
+    <link rel="stylesheet" href="./assets/fonts/TripSans/TripSans.css">
+    <link rel="stylesheet" href="./assets/fonts/Emirates/Emirates.css">
+ 
+    <!-- Bootstrap Css -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="./assets/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Style Css -->
     <link href="./assets/styles/css/style.css" rel="stylesheet">
+    
+    <!-- Home Css -->
+    <link href="./assets/styles/css/home.css" rel="stylesheet">
 </head>
 <body>
     
+    <!-- Header Area -->
+    <header id="header" class="bg-light">
+        <section class="header-section">
+            <div class="container-xxl px-5">
+                <div class="row m-0">
+                    <div class="col-12 p-0">
+                        <nav class="navbar navbar-expand-lg py-1">
+                            <div class="container-fluid p-0">
+                                <a class="navbar-brand" href="#">
+                                    <img src="./assets/images/arabian-adventure-desert.png" alt="Logo">
+                                </a>
+
+                                <div id="menu-toggle">
+                                    <div id="hamburger">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                    <div id="cross">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </div>
+
+                                <div id="navbarNav" class="collapse navbar-collapse sidebar-menu mx-4">
+                                    <a href="" class="sidebar-menu-close"><span></span></a>
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Desert Safaris</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Dune Buggy</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Quad Bike</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Camel Ride</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Sand Surfing</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Overnight Desert Camping</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    
+    <!-- Slider Area -->
+    <section id="slider">
+        <div class="container-xxl p-0">
+            <div class="row m-0">
+                <div class="col-12 p-0">
+                    <div class="banner">
+                        
+                        <div class="background-image">
+                            <!-- <img src="./assets/images/Arabian-Adventure-Desert-Safari-Tour.jpg" alt="Arabian Adventure Desert Safari Tour"> -->
+                            <img src="./assets/images/slider-01.jpg">
+                        </div>
+                        
+                        <div class="banner_content">
+                            <h2 class="waved-heading text-center">
+                                <span>Arabian desert</span>
+                                <span class="waved">
+                                    <span><span>s</span></span
+                                    ><span><span>a</span></span
+                                    ><span><span>f</span></span
+                                    ><span><span>a</span></span
+                                    ><span><span>r</span></span
+                                    ><span><span>i</span></span
+                                    ><span><span>s</span></span>
+                                </span>
+                            </h2>
+                            <p class="subtitle text-center m-0">Online exclusive: save 10% when booking 2 or more activities on our website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adventures Area -->
+    <section id="adventures" class="pt-5 pb-4">
+        <div class="container-xxl px-5">
+            <div class="row m-0  justify-content-around row-cols-5">
+                <div class="col-12 p-0 py-2">
+                    <h2 class="waved-heading">
+                        <span>Our</span>
+                        <span class="waved">
+                            <span><span>e</span></span
+                            ><span><span>x</span></span
+                            ><span><span>p</span></span
+                            ><span><span>e</span></span
+                            ><span><span>r</span></span
+                            ><span><span>i</span></span
+                            ><span><span>e</span></span
+                            ><span><span>n</span></span
+                            ><span><span>c</span></span
+                            ><span><span>e</span></span
+                            ><span><span>s</span></span>
+                        </span>
+                        <span>last</span>
+                    </h2>
+                    <p class="subtitle m-0">Online exclusive: save 10% when booking 2 or more activities on our website</p>
+                </div>
+                <div class="col p-0">
+                    <div class="single-adventure my-2 text-center">
+                        <div class="adventure-img">
+                            <img src="./assets/images/adventure-1.webp" alt="">
+                            <div class="adventure-details">
+                                <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
+                            </div>
+                        </div>
+                        <h3><a href="#">Desert Adventures</a></h3>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="single-adventure my-2 text-center">
+                        <div class="adventure-img">
+                            <img src="./assets/images/topDesti6.png.webp" alt="">
+                            <div class="adventure-details">
+                                <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
+                            </div>
+                        </div>
+                        <h3><a href="#">Tours & Attractions</a></h3>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="single-adventure my-2 text-center">
+                        <div class="adventure-img">
+                            <img src="./assets/images/adventure-3.webp" alt="">
+                            <div class="adventure-details">
+                                <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
+                            </div>
+                        </div>
+                        <h3><a href="#">Cruise & Boat Tours</a></h3>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="single-adventure my-2 text-center">
+                        <div class="adventure-img">
+                            <img src="./assets/images/adventure-4.webp" alt="">
+                            <div class="adventure-details">
+                                <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
+                            </div>
+                        </div>
+                        <h3><a href="#">Water & Theme Parks</a></h3>
+                    </div>
+                </div>
+                <div class="col p-0">
+                    <div class="single-adventure my-2 text-center">
+                        <div class="adventure-img">
+                            <img src="./assets/images/topDesti2.png.webp" alt="">
+                            <div class="adventure-details">
+                                <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
+                            </div>
+                        </div>
+                        <h3><a href="#">Sustainable</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Tours Area -->
+     <section class="top-tours pt-3 pb-4">
+        <div class="container-xxl px-5">
+            <div class="row m-0 justify-content-around">
+                <div class="col-12 p-0 py-2">
+                    <h2 class="waved-heading">
+                        <span>Our Top</span>
+                        <span class="waved">
+                            <span><span>t</span></span
+                            ><span><span>o</span></span
+                            ><span><span>u</span></span
+                            ><span><span>r</span></span
+                            ><span><span>s</span></span>
+                        </span>
+                    </h2>
+                    <p class="subtitle m-0">Online exclusive: save 10% when booking 2 or more activities on our website</p>
+                </div>
+                <!-- card -->
+                <div class="col-3 p-0 mb-3">
+                    <div class="tour">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail">
+                                <img src="./assets/images/Morning-Desert-Safari.webp" alt="">
+                                <span class="category">Day Trips</span>
+                            </div>
+                            <div class="details">
+                                <span class="label">Dubai Desert Safari Tours</span>
+                                <p class="title">
+                                    <strong>Budget-Friendly Evening Desert Safari & BBQ Dinner with Optional Quad Bike</strong>
+                                </p>
+                                <div class="tour-info">
+                                    <div class="duration">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8.5 5.5a.5.5 0 00-1 0V8c0 .14.05.26.15.36l2.01 2.02a.5.5 0 10.7-.7L8.5 7.8V5.5z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.96a6 6 0 100-12 6 6 0 000 12zm5-6a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg>
+                                        4 to 6 hours
+                                    </div>
+                                    <div class="tagging-wrap">
+                                        <span class="tagging">Hotel pick-up</span>
+                                        <span class="tagging">Private tour</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="old-price">
+                                        <span class="label">From</span>
+                                        <span class="price">150 AED</span>
+                                    </div>
+                                    <div class="activity-price">
+                                        <span class="price">99.5 AED</span>
+                                        <span class="caption">per person</span>
+                                    </div>
+                                </div>
+                                <div class="tagging-wrap">
+                                    <span class="tagging">
+                                        <span class="tag-content">Sale</span>
+                                        <span class="vertical-promo-tag">18
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                    <span class="tagging">
+                                        <span class="tag-content">Combo</span>
+                                        <span class="vertical-promo-tag">26
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0 mb-3">
+                    <div class="tour">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail">
+                                <img src="./assets/images/Desert-Safari.jpg" alt="">
+                                <span class="category">Day Trips</span>
+                            </div>
+                            <div class="details">
+                                <span class="label">Dubai Desert Safari Tours</span>
+                                <p class="title">
+                                    <strong>Private Group (up to 6 people) Red Dunes Desert Safari</strong>
+                                </p>
+                                <div class="tour-info">
+                                    <div class="duration">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8.5 5.5a.5.5 0 00-1 0V8c0 .14.05.26.15.36l2.01 2.02a.5.5 0 10.7-.7L8.5 7.8V5.5z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.96a6 6 0 100-12 6 6 0 000 12zm5-6a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg>
+                                        8 to 10 hours
+                                    </div>
+                                    <div class="tagging-wrap">
+                                        <span class="tagging">Hotel pick-up</span>
+                                        <span class="tagging">Private tour</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="old-price">
+                                        <span class="label">From</span>
+                                        <span class="price">1500 AED</span>
+                                    </div>
+                                    <div class="activity-price">
+                                        <span class="price">1300 AED</span>
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="tagging-wrap">
+                                    <span class="tagging">
+                                        <span class="tag-content">Sale</span>
+                                        <span class="vertical-promo-tag">15
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                    <span class="tagging">
+                                        <span class="tag-content">Combo</span>
+                                        <span class="vertical-promo-tag">36
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0 mb-3">
+                    <div class="tour">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail">
+                                <img src="./assets/images/Buggy-Dune-Bashing.jpg" alt="">
+                                <span class="category">Day Trips</span>
+                            </div>
+                            <div class="details">
+                                <span class="label">Dubai Desert Safari Tours</span>
+                                <p class="title">
+                                    <strong>Ultimate Evening Adventure Safari</strong>
+                                </p>
+                                <div class="tour-info">
+                                    <div class="duration">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8.5 5.5a.5.5 0 00-1 0V8c0 .14.05.26.15.36l2.01 2.02a.5.5 0 10.7-.7L8.5 7.8V5.5z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.96a6 6 0 100-12 6 6 0 000 12zm5-6a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg>
+                                        6 to 10 hours
+                                    </div>
+                                    <div class="tagging-wrap">
+                                        <span class="tagging">Hotel pick-up</span>
+                                        <span class="tagging">Private tour</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="old-price">
+                                        <span class="label">From</span>
+                                        <span class="price">300 AED</span>
+                                    </div>
+                                    <div class="activity-price">
+                                        <span class="price">245 AED</span>
+                                        <span class="caption">per person</span>
+                                    </div>
+                                </div>
+                                <div class="tagging-wrap">
+                                    <span class="tagging">
+                                        <span class="tag-content">Sale</span>
+                                        <span class="vertical-promo-tag">12
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                    <span class="tagging">
+                                        <span class="tag-content">Combo</span>
+                                        <span class="vertical-promo-tag">20
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0 mb-3">
+                    <div class="tour">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail">
+                                <img src="./assets/images/Desert-Safari-Camel-Riding.jpg" alt="">
+                                <span class="category">Day Trips</span>
+                            </div>
+                            <div class="details">
+                                <span class="label">Dubai Desert Safari Tours</span>
+                                <p class="title">
+                                    <strong>Desert Safari Camel Riding</strong>
+                                </p>
+                                <div class="tour-info">
+                                    <div class="duration">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8.5 5.5a.5.5 0 00-1 0V8c0 .14.05.26.15.36l2.01 2.02a.5.5 0 10.7-.7L8.5 7.8V5.5z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.96a6 6 0 100-12 6 6 0 000 12zm5-6a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg>
+                                        1 to 2 hours
+                                    </div>
+                                    <div class="tagging-wrap">
+                                        <span class="tagging">Hotel pick-up</span>
+                                        <span class="tagging">Private tour</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="old-price">
+                                        <span class="label">From</span>
+                                        <span class="price">100 AED</span>
+                                    </div>
+                                    <div class="activity-price">
+                                        <span class="price">75.5 AED</span>
+                                        <span class="caption">per person</span>
+                                    </div>
+                                </div>
+                                <div class="tagging-wrap">
+                                    <span class="tagging">
+                                        <span class="tag-content">Sale</span>
+                                        <span class="vertical-promo-tag">10
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                    <span class="tagging">
+                                        <span class="tag-content">Combo</span>
+                                        <span class="vertical-promo-tag">16
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0 mb-3">
+                    <div class="tour">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail">
+                                <img src="./assets/images/Desert-Safari-Camel-Riding.jpg" alt="">
+                                <span class="category">Day Trips</span>
+                            </div>
+                            <div class="details">
+                                <span class="label">Dubai Desert Safari Tours</span>
+                                <p class="title">
+                                    <strong>Desert Safari Camel Riding</strong>
+                                </p>
+                                <div class="tour-info">
+                                    <div class="duration">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8.5 5.5a.5.5 0 00-1 0V8c0 .14.05.26.15.36l2.01 2.02a.5.5 0 10.7-.7L8.5 7.8V5.5z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.96a6 6 0 100-12 6 6 0 000 12zm5-6a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg>
+                                        1 to 2 hours
+                                    </div>
+                                    <div class="tagging-wrap">
+                                        <span class="tagging">Hotel pick-up</span>
+                                        <span class="tagging">Private tour</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="old-price">
+                                        <span class="label">From</span>
+                                        <span class="price">100 AED</span>
+                                    </div>
+                                    <div class="activity-price">
+                                        <span class="price">75.5 AED</span>
+                                        <span class="caption">per person</span>
+                                    </div>
+                                </div>
+                                <div class="tagging-wrap">
+                                    <span class="tagging">
+                                        <span class="tag-content">Sale</span>
+                                        <span class="vertical-promo-tag">10
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                    <span class="tagging">
+                                        <span class="tag-content">Combo</span>
+                                        <span class="vertical-promo-tag">16
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0 mb-3">
+                    <div class="tour">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail">
+                                <img src="./assets/images/Deset-Buggys.webp" alt="">
+                                <span class="category">Day Trips</span>
+                            </div>
+                            <div class="details">
+                                <span class="label">Dubai Desert Safari Tours</span>
+                                <p class="title">
+                                    <strong>Ultimate Evening Adventure Safari</strong>
+                                </p>
+                                <div class="tour-info">
+                                    <div class="duration">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8.5 5.5a.5.5 0 00-1 0V8c0 .14.05.26.15.36l2.01 2.02a.5.5 0 10.7-.7L8.5 7.8V5.5z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.96a6 6 0 100-12 6 6 0 000 12zm5-6a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg>
+                                        6 to 10 hours
+                                    </div>
+                                    <div class="tagging-wrap">
+                                        <span class="tagging">Hotel pick-up</span>
+                                        <span class="tagging">Private tour</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="old-price">
+                                        <span class="label">From</span>
+                                        <span class="price">300 AED</span>
+                                    </div>
+                                    <div class="activity-price">
+                                        <span class="price">245 AED</span>
+                                        <span class="caption">per person</span>
+                                    </div>
+                                </div>
+                                <div class="tagging-wrap">
+                                    <span class="tagging">
+                                        <span class="tag-content">Sale</span>
+                                        <span class="vertical-promo-tag">12
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                    <span class="tagging">
+                                        <span class="tag-content">Combo</span>
+                                        <span class="vertical-promo-tag">20
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0 mb-3">
+                    <div class="tour">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail">
+                                <img src="./assets/images/desert-safari-01.webp" alt="">
+                                <span class="category">Day Trips</span>
+                            </div>
+                            <div class="details">
+                                <span class="label">Dubai Desert Safari Tours</span>
+                                <p class="title">
+                                    <strong>Private Group (up to 6 people) Red Dunes Desert Safari</strong>
+                                </p>
+                                <div class="tour-info">
+                                    <div class="duration">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8.5 5.5a.5.5 0 00-1 0V8c0 .14.05.26.15.36l2.01 2.02a.5.5 0 10.7-.7L8.5 7.8V5.5z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.96a6 6 0 100-12 6 6 0 000 12zm5-6a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg>
+                                        8 to 10 hours
+                                    </div>
+                                    <div class="tagging-wrap">
+                                        <span class="tagging">Hotel pick-up</span>
+                                        <span class="tagging">Private tour</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="old-price">
+                                        <span class="label">From</span>
+                                        <span class="price">1500 AED</span>
+                                    </div>
+                                    <div class="activity-price">
+                                        <span class="price">1300 AED</span>
+                                        <span class="caption"></span>
+                                    </div>
+                                </div>
+                                <div class="tagging-wrap">
+                                    <span class="tagging">
+                                        <span class="tag-content">Sale</span>
+                                        <span class="vertical-promo-tag">15
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                    <span class="tagging">
+                                        <span class="tag-content">Combo</span>
+                                        <span class="vertical-promo-tag">36
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3 p-0 mb-3">
+                    <div class="tour">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <div class="thumbnail">
+                                <img src="./assets/images/red-dunes-desert-safari.webp" alt="">
+                                <span class="category">Day Trips</span>
+                            </div>
+                            <div class="details">
+                                <span class="label">Dubai Desert Safari Tours</span>
+                                <p class="title">
+                                    <strong>Budget-Friendly Evening Desert Safari & BBQ Dinner with Optional Quad Bike</strong>
+                                </p>
+                                <div class="tour-info">
+                                    <div class="duration">
+                                        <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8.5 5.5a.5.5 0 00-1 0V8c0 .14.05.26.15.36l2.01 2.02a.5.5 0 10.7-.7L8.5 7.8V5.5z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M8 13.96a6 6 0 100-12 6 6 0 000 12zm5-6a5 5 0 11-10 0 5 5 0 0110 0z"></path></svg>
+                                        4 to 6 hours
+                                    </div>
+                                    <div class="tagging-wrap">
+                                        <span class="tagging">Hotel pick-up</span>
+                                        <span class="tagging">Private tour</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <div class="old-price">
+                                        <span class="label">From</span>
+                                        <span class="price">150 AED</span>
+                                    </div>
+                                    <div class="activity-price">
+                                        <span class="price">99.5 AED</span>
+                                        <span class="caption">per person</span>
+                                    </div>
+                                </div>
+                                <div class="tagging-wrap">
+                                    <span class="tagging">
+                                        <span class="tag-content">Sale</span>
+                                        <span class="vertical-promo-tag">18
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                    <span class="tagging">
+                                        <span class="tag-content">Combo</span>
+                                        <span class="vertical-promo-tag">26
+                                            <svg class="svg-percent" width="11" height="9" viewBox="0 0 11 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 1L3 8" stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"></path>
+                                                <circle cx="2.5" cy="2.5" r="2" stroke="currentColor"></circle>
+                                                <circle cx="8.5" cy="6.5" r="2" stroke="currentColor"></circle>
+                                            </svg> off
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+    <!-- Bootstrap Js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="./assets/bootstrap.bundle.min.js"></script>
+
+    <!-- App Js -->
     <script src="./assets/scripts/app.js"></script>
 </body>
 </html>

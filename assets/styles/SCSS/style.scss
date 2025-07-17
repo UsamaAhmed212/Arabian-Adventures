@@ -1,0 +1,19 @@
+// Import external files and variables
+@use 'variables' as *;
+@use 'header' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+html body {
+    font-family: "Trip Sans VF","Trip Sans","Trip Sans Mono",Arial,sans-serif;
+}
+
+@include header;

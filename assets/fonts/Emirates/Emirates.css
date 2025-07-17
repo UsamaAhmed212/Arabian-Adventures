@@ -1,0 +1,10 @@
+@font-face {
+    font-family: emirates;
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url(Emirates-Bold-font.woff2) format("woff2"),
+    url(Emirates-Bold-font.woff) format("woff")
+}
+
+

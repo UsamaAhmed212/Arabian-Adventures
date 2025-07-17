@@ -1,0 +1,49 @@
+// Import external files and variables
+@use 'variables' as *;
+@use 'common' as *;
+
+@mixin slider {
+    
+    #slider {
+        position: relative;
+
+        .background-image {
+            overflow: hidden;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+                background-color: #000;
+                opacity: .25;
+            }
+
+            img {
+                width: 100%;
+                min-height: 330px;
+                max-height: 330px;
+                object-fit: cover;
+                transform: scale(1.07);
+            }
+        }
+
+        .banner {
+            .banner_content {
+                width: 100%;
+                font-family: emirates;
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $default_color;
+                padding: 120px 0;
+                z-index: 1;
+
+                .waved-heading > span:not(.waved) {
+                    color: $default_color;
+                }
+            }
+        }
+    }
+}
