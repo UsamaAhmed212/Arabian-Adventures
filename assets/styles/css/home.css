@@ -64,17 +64,17 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #faf8f8;
+  color: #f7f7f7;
   padding: 120px 0;
   z-index: 1;
 }
 #slider .banner .banner_content .waved-heading > span:not(.waved) {
-  color: #faf8f8;
+  color: #f7f7f7;
 }
 
 /* Adventures Area Css */
 #adventures {
-  background: #faf8f8;
+  background: #f7f7f7;
 }
 #adventures .waved-heading > span:not(.waved) {
   color: #928259;
@@ -113,7 +113,7 @@
   position: absolute;
   width: 92%;
   height: 91%;
-  border: 2px dotted #faf8f8;
+  border: 2px dotted #f7f7f7;
   border-radius: 50%;
   opacity: 0;
   transition: all 0.4s ease-out 0s;
@@ -143,7 +143,7 @@
 }
 #adventures .single-adventure .adventure-img .adventure-details h4 a {
   display: inline-block;
-  color: #faf8f8;
+  color: #f7f7f7;
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
@@ -153,7 +153,7 @@
 #adventures .single-adventure .adventure-img .adventure-details h4 a svg {
   width: 14px;
   height: 14px;
-  fill: #faf8f8;
+  fill: #f7f7f7;
   margin-left: 5px;
 }
 #adventures .single-adventure h3 a {
@@ -341,5 +341,157 @@
 .top-tours .tour:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.celebrity-visits-info {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background: #f7f7f7;
+}
+.celebrity-visits-info .famous-card {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.celebrity-visits-info .famous-card img {
+  transform-style: unset;
+  width: 100%;
+  height: 183px;
+  object-fit: cover;
+  object-position: center;
+}
+.celebrity-visits-info .famous-card .famous-overlay {
+  position: absolute;
+  background: linear-gradient(180deg, rgba(27, 27, 27, 0) 0%, rgba(27, 27, 27, 0.25) 84.91%, rgba(27, 27, 27, 0.75) 100%);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.celebrity-visits-info .famous-card .famous-info {
+  position: absolute;
+  padding: 20px;
+  bottom: 0px;
+  left: 0px;
+  height: 65px;
+  transition: all ease 0.5s;
+}
+.celebrity-visits-info .famous-card .famous-info .famous-name {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.celebrity-visits-info .famous-card .famous-info .famous-text {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 17px;
+}
+.celebrity-visits-info .famous-card:hover .famous-info {
+  height: 100%;
+  content: " ";
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  background-color: rgba(39, 65, 43, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.celebrity-visits-info .owl-carousel {
+  position: relative;
+}
+.celebrity-visits-info .owl-carousel .owl-nav {
+  top: 100%;
+  position: absolute;
+  width: 200px;
+  margin-top: 0;
+  transform: translate3d(0, -50%, 0);
+  left: calc(50% - 100px);
+}
+.celebrity-visits-info .owl-carousel .owl-nav button.owl-prev,
+.celebrity-visits-info .owl-carousel .owl-nav button.owl-next {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  outline: 0;
+  margin: 0;
+  transform: translate3d(0, -50%, 0);
+}
+.celebrity-visits-info .owl-carousel .owl-nav button.owl-prev {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"%3E%3Cpath d="M14 6L8 12L14 18" stroke="%2327412B" stroke-width="2"/%3E%3C/svg%3E') !important;
+  left: 0;
+}
+.celebrity-visits-info .owl-carousel .owl-nav button.owl-next {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"%3E%3Cpath d="M10 6L16 12L10 18" stroke="%2327412B" stroke-width="2"/%3E%3C/svg%3E') !important;
+  right: 0;
+}
+.celebrity-visits-info .owl-carousel .owl-nav .owl-next,
+.celebrity-visits-info .owl-carousel .owl-nav .owl-prev {
+  width: 40px !important;
+  height: 40px !important;
+  background: transparent !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  border-radius: 12px;
+}
+.celebrity-visits-info .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*=owl-] {
+  background-color: #27412B;
+  border-color: #27412B #27412B #006699;
+  color: #FFF;
+}
+.celebrity-visits-info .owl-carousel .owl-dots {
+  position: relative;
+  top: 11px;
+  width: fit-content;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+}
+.celebrity-visits-info .owl-carousel .owl-dots button.owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #D6D6D6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity 0.2s ease;
+  border-radius: 30px;
+  width: 24px;
+  height: 4px;
+  margin: 0px 3px;
+}
+.celebrity-visits-info .owl-carousel .owl-dots button.owl-dot.active span, .celebrity-visits-info .owl-carousel .owl-dots button.owl-dot:hover span {
+  background-color: #27412B;
+}
+.celebrity-visits-info .famous-btn {
+  display: flex;
+  width: 270px;
+  padding: 12px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #27412B;
+  margin: 0 auto;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 32px;
+  border: 1.5px solid #27412B;
+  margin-top: 40px;
+  outline: 0;
+  text-decoration: none;
 }
 /*# sourceMappingURL=home.css.map */
