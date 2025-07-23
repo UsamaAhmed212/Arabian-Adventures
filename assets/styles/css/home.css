@@ -343,9 +343,77 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.gallery {
+  margin-bottom: 24px;
+}
+.gallery .grid .effect-overlay {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  max-width: 572px;
+  max-height: 360px;
+  width: 100%;
+  height: auto;
+  background: #000;
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+}
+.gallery .grid .effect-overlay:hover img {
+  opacity: 0.4;
+  transform: scale3d(1.1, 1.1, 1);
+}
+.gallery .grid .effect-overlay:hover p {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.gallery .grid .effect-overlay .gallery-img img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  max-width: none;
+  height: auto;
+  transition: opacity 1s, transform 1s;
+  backface-visibility: hidden;
+}
+.gallery .grid figure figcaption {
+  position: absolute;
+  top: 196px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  backface-visibility: hidden;
+}
+.gallery .grid figure figcaption > a {
+  position: absolute;
+  top: 221px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.gallery .grid figure figcaption p {
+  display: inline-block;
+  margin: 0 0 0.25em;
+  padding: 0.4em 1em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2f3238;
+  text-transform: none;
+  font-weight: 500;
+  font-size: 68.5%;
+  letter-spacing: 1px;
+  transition: opacity 0.35s, transform 0.35s;
+  transform: translate3d(-360px, 0, 0);
+}
+
 .celebrity-visits-info {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   background: #f7f7f7;
 }
 .celebrity-visits-info .famous-card {
