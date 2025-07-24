@@ -162,13 +162,14 @@
     }
 }
 
-/* Top Tours Area Css */
+
 .waved-heading {
     > span:not(.waved) {
         color: #928259;
     }
 }
 
+/* Top Tours Area Css */
 .top-tours {
     .tour {
         height: 100%;
@@ -353,6 +354,7 @@
     }
 }
 
+/* Images Gallery Section Css */
 .gallery {
     margin-bottom: 24px;
     
@@ -437,6 +439,7 @@
     }
 }
 
+/* Celebrity Visits Area Css */
 .celebrity-visits-info {
     padding-top: 20px;
     padding-bottom: 50px;
@@ -621,3 +624,105 @@
     }
 }
 
+/* Footer Area Css */
+#footer {
+    padding-top: 90px;
+    color: #dddddd;
+    background-color: #555555;
+    background-color: #333333;
+    background-color: rgb(50, 50, 50);
+    letter-spacing: 1px;
+
+    .heading-title {
+        margin-bottom: 15px;
+
+        h5 {
+            margin: 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    }
+
+    .about-content {
+        p {
+            color: #7f7f7f;
+            font-size: 17px;
+            text-align: justify;
+        }
+    }
+
+    .contact-content {
+
+        .content-item {
+            margin-bottom: 10px;
+
+            a {
+                text-decoration: none;
+                color: #7f7f7f;
+                font-size: 17px;
+                font-weight: bold;
+
+                svg {
+                    width: 20px;
+                    height: 20px;
+                    fill: #7f7f7f;
+                    margin-right: 5px;
+                }
+            }
+
+            &.address a svg {
+                // transform: rotate(15deg);
+            }
+
+            &.phone a svg {
+                width: 18px;
+                height: 18px;
+            }
+
+            &.whatsapp a svg {
+                width: 25px;
+                height: 24px;
+            }
+
+            &.email a svg {
+            }
+        }
+    }
+
+    .payment-methods-content {
+
+        .content-item {
+
+            &.pick-up {
+                img {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .payment-channels {
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            padding: 0;
+            margin-top: 12px;
+            width: 80%;
+
+            li {
+                background-position: 50%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                border: 1px solid #eee;
+                border-radius: 6px;
+                height: 25px;
+                margin-bottom: 12px;
+                margin-right: 12px;
+                width: 40px;
+            }
+        }
+    }
+}
