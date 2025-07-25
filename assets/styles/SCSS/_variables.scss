@@ -2,3 +2,36 @@
 
 // $default_color: #faf8f8;
 $default_color: #f7f7f7;
+
+
+
+
+
+// Define common breakpoints
+$breakpoint-xs: 0;       // Extra small: <576px
+$breakpoint-sm: 576px;   // Small: ≥576px
+$breakpoint-md: 768px;   // Medium: ≥768px
+$breakpoint-lg: 992px;   // Large: ≥992px
+$breakpoint-xl: 1200px;  // Extra large: ≥1200px
+$breakpoint-xxl: 1400px; // Extra extra large: ≥1400px
+
+// Mixin for min-width queries
+@mixin respond-min($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+// Mixin for max-width queries
+@mixin respond-max($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+// Mixin for responsive queries between two breakpoints (min-width and max-width)
+@mixin respond-between($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}

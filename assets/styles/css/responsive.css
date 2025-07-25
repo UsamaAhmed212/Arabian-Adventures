@@ -1,2 +1,19 @@
-
+body .top-tours {
+  background: silver;
+}
+@media (max-width: 992px) {
+  body .top-tours .tour .thumbnail img {
+    height: 170px;
+  }
+}
+@media (max-width: 768px) {
+  body .top-tours .tour .thumbnail img {
+    height: 160px;
+  }
+}
+@media (max-width: 576px) {
+  body .top-tours .tour .thumbnail img {
+    height: 120px;
+  }
+}
 /*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,24 @@
+// Import external files and variables
+@use 'variables' as *;
+
+body {
+    .top-tours {
+        background: silver;
+    }
+
+
+    .top-tours .tour .thumbnail img {
+        @include respond-max($breakpoint-lg) {
+            height: 170px;
+        }
+
+        @include respond-max($breakpoint-md) {
+            height: 160px;
+        }
+
+        @include respond-max($breakpoint-sm) {
+            height: 120px;
+        }
+
+    }
+}

@@ -207,7 +207,7 @@
 }
 .top-tours .tour .thumbnail img {
   width: 100%;
-  height: 200px;
+  height: 180px;
   object-fit: cover;
 }
 .top-tours .tour .thumbnail .category {
