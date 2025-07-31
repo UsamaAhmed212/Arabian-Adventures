@@ -1,0 +1,201 @@
+body {
+  /* Header Section */
+  /* Adventures Area */
+  /* Top Tours Area */
+  /* Images Gallery Section */
+  /* Celebrity Visits Area */
+  /* Footer Section */
+}
+@media (max-width: 1199px) {
+  body #header #navbarNav ul li a {
+    padding: 6px 8px;
+    font-size: 15px;
+  }
+  body #header #menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+}
+@media (max-width: 991px) {
+  body #header {
+    /* Responsive Menu Toggle  */
+    /* #header > #menu-toggle Effect Css */
+  }
+  body #header #navbarNav ul li a {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+  body #header #menu-toggle {
+    display: block;
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 5px;
+  }
+  body #header #menu-toggle span {
+    display: block;
+    background: #ccc;
+    border-radius: 2px;
+    transition: 0.25s ease-in-out;
+    box-sizing: border-box;
+  }
+  body #header #menu-toggle:hover {
+    background: transparent;
+  }
+  body #header #menu-toggle #hamburger {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+  }
+  body #header #menu-toggle #hamburger span {
+    width: 80%;
+    height: 3px;
+    position: relative;
+    top: 10%;
+    left: 10%;
+    margin: 8px 0;
+  }
+  body #header #menu-toggle #hamburger span:nth-child(1) {
+    transition-delay: 0.5s;
+  }
+  body #header #menu-toggle #hamburger span:nth-child(2) {
+    transition-delay: 0.625s;
+  }
+  body #header #menu-toggle #hamburger span:nth-child(3) {
+    transition-delay: 0.75s;
+  }
+  body #header #menu-toggle #cross {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    right: 0;
+    transform: rotate(45deg);
+  }
+  body #header #menu-toggle #cross span:nth-child(1) {
+    height: 0%;
+    width: 3px;
+    position: absolute;
+    top: 10%;
+    left: 46%;
+    transition-delay: 0s;
+  }
+  body #header #menu-toggle #cross span:nth-child(2) {
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 10%;
+    top: 48%;
+    transition-delay: 0.25s;
+  }
+  body #header #menu-toggle[aria-expanded=true] #hamburger span {
+    width: 0%;
+  }
+  body #header #menu-toggle[aria-expanded=true] #hamburger span span:nth-child(1) {
+    transition-delay: 0s;
+  }
+  body #header #menu-toggle[aria-expanded=true] #hamburger span span:nth-child(2) {
+    transition-delay: 0.125s;
+  }
+  body #header #menu-toggle[aria-expanded=true] #hamburger span span:nth-child(3) {
+    transition-delay: 0.25s;
+  }
+  body #header #menu-toggle[aria-expanded=true] #cross span:nth-child(1) {
+    height: 80%;
+    transition-delay: 0.625s;
+  }
+  body #header #menu-toggle[aria-expanded=true] #cross span:nth-child(2) {
+    width: 80%;
+    transition-delay: 0.375s;
+  }
+}
+@media (max-width: 399px) {
+  body #adventures .single-adventure .adventure-img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media (max-width: 349px) {
+  body #adventures .single-adventure .adventure-img {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media (max-width: 299px) {
+  body #adventures .single-adventure .adventure-img {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media (max-width: 991px) {
+  body .top-tours .tour .thumbnail img {
+    height: 170px;
+  }
+}
+@media (max-width: 767px) {
+  body .top-tours .tour .thumbnail img {
+    height: 160px;
+  }
+}
+@media (max-width: 575px) {
+  body .top-tours .tour .thumbnail img {
+    height: 120px;
+  }
+}
+@media (max-width: 991px) {
+  body .gallery .grid .effect-overlay p {
+    display: none;
+  }
+}
+@media (max-width: 1199px) {
+  body .celebrity-visits-info .famous-card .famous-info {
+    padding: 15px;
+    height: 55px;
+  }
+}
+@media (max-width: 575px) {
+  body .celebrity-visits-info .famous-card .famous-info {
+    padding: 8px;
+    height: 40px;
+  }
+}
+@media (max-width: 405px) {
+  body .celebrity-visits-info .famous-card .famous-info {
+    height: 55px;
+  }
+}
+@media (max-width: 360px) {
+  body .celebrity-visits-info .famous-card .famous-info {
+    height: 45px;
+  }
+}
+@media (max-width: 1199px) {
+  body .celebrity-visits-info .famous-card .famous-info .famous-name {
+    font-size: 22px;
+  }
+}
+@media (max-width: 405px) {
+  body .celebrity-visits-info .famous-card .famous-info .famous-name {
+    font-size: 19px;
+  }
+}
+@media (max-width: 360px) {
+  body .celebrity-visits-info .famous-card .famous-info .famous-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+  body #footer .payment-channels ul {
+    width: 100%;
+  }
+}
+@media (min-width: 575px) and (max-width: 767px) {
+  body #footer .payment-channels ul {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
