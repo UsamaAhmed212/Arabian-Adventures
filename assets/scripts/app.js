@@ -143,26 +143,27 @@ $(document).ready(function () {
 
             // Create buttons
             container.innerHTML = ranges.map(range => `
-                <button class="DateListItem" data-date="${range.date.toISOString()}">
-                    <span class="day-name">${range.dayName}</span>
-                    <span class="date-number">${range.dateNumber}</span>
-                    <!-- <span class="price">${range.price}</span> -->
-                    <span class="price">${range.price}</span>
-                </button>
+                <div class="tour-date-btn">
+                    <button class="DateListItem" data-date="${range.date.toISOString()}">
+                        <span class="day-name">${range.dayName}</span>
+                        <span class="date-number">${range.dateNumber}</span>
+                        <span class="price">-</span>
+                    </button>
+                </div>
             `).join('');
 
             container.innerHTML += `
-                <button class="MoreDatesButton">
+                <div class="MoreDatesButton">
                     <div class="more-dates-button">
                         <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M12.6667 2.66675H3.33333C2.59695 2.66675 2 3.2637 2 4.00008V13.3334C2 14.0698 2.59695 14.6667 3.33333 14.6667H12.6667C13.403 14.6667 14 14.0698 14 13.3334V4.00008C14 3.2637 13.403 2.66675 12.6667 2.66675Z" stroke="#23a1b2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M10.6667 1.33337V4.00004" stroke="#23a1b2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.33334 1.33337V4.00004" stroke="#23a1b2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 6.66675H14" stroke="#23a1b2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                         <p class="more-dates-button-text">
                             <span class="notranslate ">More dates</span>
                         </p>
                     </div>
-                </button>
+                </div>
             `;
             
-            instance.input.insertAdjacentHTML("afterend", `<p>All prices are in AED (AED)</p>`);
+            instance.input.insertAdjacentHTML("afterend", `<p class="TextBlock">All prices are in AED (AED)</p>`);
 
             // Insert after input
             instance.input.insertAdjacentElement("afterend", container);

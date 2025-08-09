@@ -10,7 +10,7 @@
     "nodemon-pro": "cross-env NODE_ENV=production nodemon index.js",
     "gulp": "gulp dev",
     "gulp-pro": "gulp build",
-    "start": "npm-run-all --parallel nodemon gulp",
+    "start": "npm-run-all --parallel gulp",
     "start-all": "npm-run-all --parallel nodemon gulp"
   },
   "devDependencies": {
