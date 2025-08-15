@@ -1,6 +1,7 @@
 // Import external files and variables
 @use 'variables' as *;
 @use 'header' as *;
+@use 'footer' as *;
 
 *,
 *::before,
@@ -17,3 +18,4 @@ html body {
 }
 
 @include header;
+@include footer;

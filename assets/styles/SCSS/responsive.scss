@@ -220,4 +220,125 @@ body {
             }
         }
     }
+
+
+
+    /** 
+     * page.html Page Responsive Styles 
+    */
+    /* media container Section */
+
+    .page-title-header,
+    .media-container,
+    .product-promo,
+    .booking-assistant {
+        // background: slategrey;
+    }
+    // background: red;
+
+
+    /* Page Title Header Section */
+    .page-title-header {
+
+        @include respond-max($breakpoint-lg) {
+            .page-title_wrapper .page-title {
+                font-size: 32px;
+            }
+
+            .page-title-category {
+                font-size: 14px;
+            }
+        }
+    }
+
+    /* Media Container Section */
+    .media-container {
+        // grid-template-columns: repeat(4, 1fr); del This
+        // grid-template-rows: repeat(4, 1fr); del This
+        @include respond-max($breakpoint-sm) {
+            .media-items-wrapper {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+
+                .media-item {
+                    &:nth-child(1) {
+                        grid-column: span 4 / span 4;
+                        grid-row: span 4 / span 4;
+
+                        img {
+                            height: 180px;
+                            border-radius: 1rem;
+                        }
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3),
+                    &:nth-child(4),
+                    &:nth-child(5) {
+                        display: none;
+                    }
+                }
+                
+                
+            }
+        }
+    }
+
+    /* Product Promo Section */
+    .product-promo {
+        
+        .promo-prices-notification {
+            @include respond-max($breakpoint-xl) {
+            }
+        }
+
+        .promo-prices  {
+            @include respond-max($breakpoint-md) {
+                justify-content: center;
+
+                .activity-price {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .promo-label {
+            @include respond-max($breakpoint-sm) {
+                padding: 10px;
+            }
+        }
+
+        .promo-prices-notification {
+            @include respond-max($breakpoint-md) {
+                text-align: center;
+            }
+        }
+
+        .promo-actions button {
+            @include respond-max($breakpoint-xl) {
+                max-width: 100%;
+                padding: 10px 24px;
+            }
+
+            @include respond-max($breakpoint-xl) {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    /* Booking Assistant Area */
+    .booking-assistant {
+        
+        .SidebarWrapper .bookingItineraryCard {
+            @include respond-max($breakpoint-xl) {
+                max-width: 405px;
+                margin-left: auto;
+            }
+
+            @include respond-max($breakpoint-md) {
+                margin: 0 auto;
+            }
+        }
+    }
+
 }

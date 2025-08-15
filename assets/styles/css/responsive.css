@@ -5,6 +5,14 @@ body {
   /* Images Gallery Section */
   /* Celebrity Visits Area */
   /* Footer Section */
+  /** 
+   * page.html Page Responsive Styles 
+  */
+  /* media container Section */
+  /* Page Title Header Section */
+  /* Media Container Section */
+  /* Product Promo Section */
+  /* Booking Assistant Area */
 }
 @media (max-width: 1199px) {
   body #header #navbarNav ul li a {
@@ -196,6 +204,71 @@ body {
 @media (min-width: 575px) and (max-width: 767px) {
   body #footer .payment-channels ul {
     width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  body .page-title-header .page-title_wrapper .page-title {
+    font-size: 32px;
+  }
+  body .page-title-header .page-title-category {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  body .media-container .media-items-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  body .media-container .media-items-wrapper .media-item:nth-child(1) {
+    grid-column: span 4/span 4;
+    grid-row: span 4/span 4;
+  }
+  body .media-container .media-items-wrapper .media-item:nth-child(1) img {
+    height: 180px;
+    border-radius: 1rem;
+  }
+  body .media-container .media-items-wrapper .media-item:nth-child(2), body .media-container .media-items-wrapper .media-item:nth-child(3), body .media-container .media-items-wrapper .media-item:nth-child(4), body .media-container .media-items-wrapper .media-item:nth-child(5) {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  body .product-promo .promo-prices {
+    justify-content: center;
+  }
+  body .product-promo .promo-prices .activity-price {
+    margin-left: 0;
+  }
+}
+@media (max-width: 575px) {
+  body .product-promo .promo-label {
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  body .product-promo .promo-prices-notification {
+    text-align: center;
+  }
+}
+@media (max-width: 1199px) {
+  body .product-promo .promo-actions button {
+    max-width: 100%;
+    padding: 10px 24px;
+  }
+}
+@media (max-width: 1199px) {
+  body .product-promo .promo-actions button {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1199px) {
+  body .booking-assistant .SidebarWrapper .bookingItineraryCard {
+    max-width: 405px;
+    margin-left: auto;
+  }
+}
+@media (max-width: 767px) {
+  body .booking-assistant .SidebarWrapper .bookingItineraryCard {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
