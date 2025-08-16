@@ -7,6 +7,7 @@ defined( 'ABSPATH' ) || exit;
  * Template Part for Displaying Header Section page template.
  */
 ?>
+
 <!-- Header Section -->
 <header id="header" class="bg-light <?php echo get_theme_mod( 'arabian_adventure_header_menu_image_radio_button' ); ?>">
     <section class="header-section">
@@ -34,28 +35,20 @@ defined( 'ABSPATH' ) || exit;
                                 </div>
                             </div>
 
-                            <div id="navbarNav" class="collapse navbar-collapse mx-xl-4 mx-lg-3 pb-lg-0 pb-2">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Desert Safaris</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Dune Buggy</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Quad Bike</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Camel Ride</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Sand Surfing</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Overnight Desert Camping</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <?php 
+                            wp_nav_menu( array(
+                                'theme_location'            => 'header_menu',
+                                'container'                 => 'div',
+                                'container_class'           => 'collapse navbar-collapse mx-xl-4 mx-lg-3 pb-lg-0 pb-2',
+                                'container_id'              => 'navbarNav',
+                                'menu_class'                => 'navbar-nav',
+                                'link_class'                => 'nav-item', //Custom arabian_adventures_link_class(); Function inc/theme-setup.php
+                                'anchor_class'              => 'nav-link', //Custom arabian_adventures_anchor_class(); Function inc/theme-setup.php
+                                'link_first_child_class'  => 'active', //Custom arabian_adventures_anchor_first_child_class(); Function inc/theme-setup.php
+                                // 'menu_items_before'         => '<a href="" class="sidebar-menu-close"><span></span></a>', //Custom arabian_adventures_prefix_menu_
+                                'depth'                     => '3',
+                            ) );
+                            ?>
                         </div>
                     </nav>
                 </div>

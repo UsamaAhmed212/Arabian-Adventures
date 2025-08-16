@@ -20,7 +20,7 @@ require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
 // Files Enqueue
 require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/enqueue.php';
-// require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-setup.php';
+require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-setup/theme-setup.php';
 // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-options.php';
 require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/customizer/customize.php';
 // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/tgm-plugin-activation/activation.php';
