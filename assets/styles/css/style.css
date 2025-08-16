@@ -85,9 +85,10 @@ html body {
   font-size: 22px;
   font-weight: bold;
 }
-#footer .about-content p {
+#footer .about-content div, #footer .about-content p {
   color: #7f7f7f;
   font-size: 17px;
+  font-weight: bold;
   text-align: justify;
 }
 #footer .contact-content .content-item {

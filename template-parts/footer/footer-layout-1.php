@@ -1,0 +1,92 @@
+<?php
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
+/**
+ * Template Part for Displaying Footer Section page template.
+ */
+?>
+
+<!-- Footer Section -->
+<footer id="footer">
+    <div class="container-xxl px-lg-5 px-sm-4 px-3">
+        <div class="row m-0 justify-content-evenly">
+            <div class="col-md-4 px-lg-4 mb-md-0 mb-2">
+                <div class="heading-title">
+                    <h5>About Us</h5>
+                </div>
+                <div class="about-content">
+                    <?php echo get_theme_mod( 'arabian_adventure_footer_copyright_text' ); ?>
+                </div>
+            </div>
+            <div class="col-md-4 px-lg-4 mb-md-0 mb-2">
+                <div class="heading-title">
+                    <h5>Contact</h5>
+                </div>
+                <div class="contact-content">
+                    <div class="content-item address">
+                        <a href="#google-map-viewport">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.3046 4.69335C21.908 3.41959 20.5806 2.09225 19.3069 2.69561L2.83473 10.4982C1.56185 11.1011 1.74664 12.9674 3.11305 13.309L9.17556 14.8247L10.6912 20.8872C11.0328 22.2536 12.8991 22.4384 13.502 21.1655L21.3046 4.69335Z" fill="inherit"/>
+                            </svg>
+                            Russia V04 – Shop no V 034 – International City – Dubai – United Arab Emirates
+                        </a>
+                    </div>
+                    <div class="content-item phone">
+                        <a href="#">
+                            <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>
+                            +1-541-754-3010
+                        </a>
+                    </div>
+                    <div class="content-item whatsapp">
+                        <a href="#">
+                            <svg viewBox="0 0 24 24" version="1.1" id="svg8" xmlns="http://www.w3.org/2000/svg">
+                                <path id="path4" d="M16.6,14c-0.2-0.1-1.5-0.7-1.7-0.8c-0.2-0.1-0.4-0.1-0.6,0.1c-0.2,0.2-0.6,0.8-0.8,1c-0.1,0.2-0.3,0.2-0.5,0.1c-0.7-0.3-1.4-0.7-2-1.2c-0.5-0.5-1-1.1-1.4-1.7c-0.1-0.2,0-0.4,0.1-0.5c0.1-0.1,0.2-0.3,0.4-0.4c0.1-0.1,0.2-0.3,0.2-0.4c0.1-0.1,0.1-0.3,0-0.4c-0.1-0.1-0.6-1.3-0.8-1.8C9.4,7.3,9.2,7.3,9,7.3c-0.1,0-0.3,0-0.5,0C8.3,7.3,8,7.5,7.9,7.6C7.3,8.2,7,8.9,7,9.7c0.1,0.9,0.4,1.8,1,2.6c1.1,1.6,2.5,2.9,4.2,3.7c0.5,0.2,0.9,0.4,1.4,0.5c0.5,0.2,1,0.2,1.6,0.1c0.7-0.1,1.3-0.6,1.7-1.2c0.2-0.4,0.2-0.8,0.1-1.2C17,14.2,16.8,14.1,16.6,14 M19.1,4.9C15.2,1,8.9,1,5,4.9c-3.2,3.2-3.8,8.1-1.6,12L2,22l5.3-1.4c1.5,0.8,3.1,1.2,4.7,1.2h0c5.5,0,9.9-4.4,9.9-9.9C22,9.3,20.9,6.8,19.1,4.9 M16.4,18.9c-1.3,0.8-2.8,1.3-4.4,1.3h0c-1.5,0-2.9-0.4-4.2-1.1l-0.3-0.2l-3.1,0.8l0.8-3l-0.2-0.3C2.6,12.4,3.8,7.4,7.7,4.9S16.6,3.7,19,7.5C21.4,11.4,20.3,16.5,16.4,18.9"/></svg>
+                            +1-541-754-3010
+                        </a>
+                    </div>
+                    <div class="content-item email">
+                        <a href="#">
+                            <svg fill="inherit" version="1.1" baseProfile="tiny" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="-0.5 0.5 42 42" xml:space="preserve">
+                            <path d="M40.5,31.5v-18c0,0-18.2,12.7-19.97,13.359C18.79,26.23,0.5,13.5,0.5,13.5v18c0,2.5,0.53,3,3,3h34
+                                C40.029,34.5,40.5,34.061,40.5,31.5z M40.471,9.971c0-1.821-0.531-2.471-2.971-2.471h-34c-2.51,0-3,0.78-3,2.6l0.03,0.28
+                                c0,0,18.069,12.44,20,13.12C22.57,22.71,40.5,10.1,40.5,10.1L40.471,9.971z"/>
+                            </svg>
+                            tryo@envyuae.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 px-lg-4 mb-md-0 mb-2">
+                <div class="heading-title">
+                    <h5>Payment Methods</h5>
+                </div>
+                <div class="payment-methods-content">
+                    <div class="content-item pick-up">
+                        <img src="<?php echo get_template_directory_uri(); ?>./assets/images/pick-up.png" alt="Payment Methods">
+                    </div>
+                    <div class="content-item payment-channels">
+                    </div>
+                </div>
+                <div class="heading-title">
+                    <h5>Payment Channels</h5>
+                </div>
+                <div class="content-item payment-channels">
+                    <ul>
+                        <li style="background-image:url(<?php echo get_template_directory_uri(); ?>./assets/images/payment-channels/Payment_Visa.webp);"></li>
+                        <li style="background-image:url(<?php echo get_template_directory_uri(); ?>./assets/images/payment-channels/credit-mastercard.webp);"></li>
+                        <li style="background-image:url(<?php echo get_template_directory_uri(); ?>./assets/images/payment-channels/methed-Amex.webp);"></li>
+                        <li style="background-image:url(<?php echo get_template_directory_uri(); ?>./assets/images/payment-channels/credit-jcb.webp);"></li>
+                        <li style="background-image:url(<?php echo get_template_directory_uri(); ?>./assets/images/payment-channels/credit-union.webp);"></li>
+                        <li style="background-image:url(<?php echo get_template_directory_uri(); ?>./assets/images/payment-channels/methed-Discover.webp);"></li>
+                        <li style="background-image:url(<?php echo get_template_directory_uri(); ?>./assets/images/payment-channels/methed-Diners.webp);"></li>
+                        <li style="background-image:url(<?php echo get_template_directory_uri(); ?>./assets/images/payment-channels/apple-pay.webp);"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

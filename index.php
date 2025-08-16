@@ -1,90 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<?php 
 
-    <!-- Title Bar Icon -->
-    <link rel="icon" href="./assets/images/cropped-arabian-desert-adventures-favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" href="./assets/images/cropped-arabian-desert-adventures-favicon-192x192.png" sizes="192x192" />
-    
-    <!-- Fonts  -->
-    <link rel="stylesheet" href="./assets/fonts/TripSans/TripSans.css">
-    <link rel="stylesheet" href="./assets/fonts/Emirates/Emirates.css">
- 
-    <!-- Bootstrap Css -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link href="./assets/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Owl Carousel CSS -->
-    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2/owl.carousel.min.css">
-    <link rel="stylesheet" href="./assets/plugins/OwlCarousel2/owl.theme.default.min.css">
+    // Exit if accessed directly.
+    defined( 'ABSPATH' ) || exit;
 
-    <!-- Style Css -->
-    <link href="./assets/styles/css/style.css" rel="stylesheet">
-    
-    <!-- Home Css -->
-    <link href="./assets/styles/css/home.css" rel="stylesheet">
+    get_header();
 
-    <!-- Responsive Css -->
-    <link rel="stylesheet" href="./assets/styles/css/responsive.css">
-
-</head>
-<body>
-    
-    <!-- Header Section -->
-    <header id="header" class="bg-light">
-        <section class="header-section">
-            <div class="container-xxl px-xl-5 px-lg-4 px-3">
-                <div class="row m-0">
-                    <div class="col-12 p-0">
-                        <nav class="navbar navbar-expand-lg py-1">
-                            <div class="container-fluid p-0">
-                                <a class="navbar-brand" href="#">
-                                    <img src="./assets/images/arabian-adventure-desert.png" alt="Logo">
-                                </a>
-
-                                <div id="menu-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <div id="hamburger">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                    <div id="cross">
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-
-                                <div id="navbarNav" class="collapse navbar-collapse mx-xl-4 mx-lg-3 pb-lg-0 pb-2">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Desert Safaris</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Dune Buggy</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Quad Bike</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Camel Ride</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Sand Surfing</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Overnight Desert Camping</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
+    // Header Section
+    get_template_part( 'template-parts/header/header', 'layout-1' );
+?>
     
     <!-- Slider Area -->
     <section id="slider">
@@ -92,10 +15,9 @@
             <div class="row m-0">
                 <div class="col-12 p-0">
                     <div class="banner">
-                        
                         <div class="background-image">
-                            <!-- <img src="./assets/images/Arabian-Adventure-Desert-Safari-Tour.jpg" alt="Arabian Adventure Desert Safari Tour"> -->
-                            <img src="./assets/images/slider-01.jpg">
+                            <!-- <img src="<?php echo get_template_directory_uri(); ?>./assets/images/Arabian-Adventure-Desert-Safari-Tour.jpg" alt="Arabian Adventure Desert Safari Tour"> -->
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/slider-01.jpg">
                         </div>
                         
                         <div class="banner_content">
@@ -147,7 +69,7 @@
                 <div class="col p-0">
                     <div class="single-adventure my-2 text-center">
                         <div class="adventure-img">
-                            <img src="./assets/images/adventure-1.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/adventure-1.webp" alt="">
                             <div class="adventure-details">
                                 <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
                             </div>
@@ -158,7 +80,7 @@
                 <div class="col p-0">
                     <div class="single-adventure my-2 text-center">
                         <div class="adventure-img">
-                            <img src="./assets/images/topDesti6.png.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/topDesti6.png.webp" alt="">
                             <div class="adventure-details">
                                 <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
                             </div>
@@ -169,7 +91,7 @@
                 <div class="col p-0">
                     <div class="single-adventure my-2 text-center">
                         <div class="adventure-img">
-                            <img src="./assets/images/adventure-3.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/adventure-3.webp" alt="">
                             <div class="adventure-details">
                                 <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
                             </div>
@@ -180,7 +102,7 @@
                 <div class="col p-0">
                     <div class="single-adventure my-2 text-center">
                         <div class="adventure-img">
-                            <img src="./assets/images/adventure-4.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/adventure-4.webp" alt="">
                             <div class="adventure-details">
                                 <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
                             </div>
@@ -191,7 +113,7 @@
                 <div class="col p-0">
                     <div class="single-adventure my-2 text-center">
                         <div class="adventure-img">
-                            <img src="./assets/images/topDesti2.png.webp" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/topDesti2.png.webp" alt="">
                             <div class="adventure-details">
                                 <h4><a href="#">Explore<svg viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a></h4>
                             </div>
@@ -225,7 +147,7 @@
                     <div class="tour">
                         <a href="page.html" target="_blank" rel="noopener noreferrer">
                             <div class="thumbnail">
-                                <img src="./assets/images/Morning-Desert-Safari.webp" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>./assets/images/Morning-Desert-Safari.webp" alt="">
                                 <span class="category">Day Trips</span>
                             </div>
                             <div class="details">
@@ -283,7 +205,7 @@
                     <div class="tour">
                         <a href="page.html" target="_blank" rel="noopener noreferrer">
                             <div class="thumbnail">
-                                <img src="./assets/images/Desert-Safari.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>./assets/images/Desert-Safari.jpg" alt="">
                                 <span class="category">Day Trips</span>
                             </div>
                             <div class="details">
@@ -341,7 +263,7 @@
                     <div class="tour">
                         <a href="page.html" target="_blank" rel="noopener noreferrer">
                             <div class="thumbnail">
-                                <img src="./assets/images/Buggy-Dune-Bashing.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>./assets/images/Buggy-Dune-Bashing.jpg" alt="">
                                 <span class="category">Day Trips</span>
                             </div>
                             <div class="details">
@@ -399,7 +321,7 @@
                     <div class="tour">
                         <a href="page.html" target="_blank" rel="noopener noreferrer">
                             <div class="thumbnail">
-                                <img src="./assets/images/Desert-Safari-Camel-Riding.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>./assets/images/Desert-Safari-Camel-Riding.jpg" alt="">
                                 <span class="category">Day Trips</span>
                             </div>
                             <div class="details">
@@ -457,7 +379,7 @@
                     <div class="tour">
                         <a href="page.html" target="_blank" rel="noopener noreferrer">
                             <div class="thumbnail">
-                                <img src="./assets/images/Desert-Safari-Camel-Riding.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>./assets/images/Desert-Safari-Camel-Riding.jpg" alt="">
                                 <span class="category">Day Trips</span>
                             </div>
                             <div class="details">
@@ -515,7 +437,7 @@
                     <div class="tour">
                         <a href="page.html" target="_blank" rel="noopener noreferrer">
                             <div class="thumbnail">
-                                <img src="./assets/images/Deset-Buggys.webp" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>./assets/images/Deset-Buggys.webp" alt="">
                                 <span class="category">Day Trips</span>
                             </div>
                             <div class="details">
@@ -573,7 +495,7 @@
                     <div class="tour">
                         <a href="page.html" target="_blank" rel="noopener noreferrer">
                             <div class="thumbnail">
-                                <img src="./assets/images/desert-safari-01.webp" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>./assets/images/desert-safari-01.webp" alt="">
                                 <span class="category">Day Trips</span>
                             </div>
                             <div class="details">
@@ -631,7 +553,7 @@
                     <div class="tour">
                         <a href="page.html" target="_blank" rel="noopener noreferrer">
                             <div class="thumbnail">
-                                <img src="./assets/images/red-dunes-desert-safari.webp" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>./assets/images/red-dunes-desert-safari.webp" alt="">
                                 <span class="category">Day Trips</span>
                             </div>
                             <div class="details">
@@ -714,7 +636,7 @@
                         <figure class="effect-overlay">
                             <div class="gallery-img">
                                 <a href="#" class="big">
-                                    <img src="./assets/images/portfolio/1.jpg" alt="" title="Dune Bashing on Red Dunes">
+                                    <img src="<?php echo get_template_directory_uri(); ?>./assets/images/portfolio/1.jpg" alt="" title="Dune Bashing on Red Dunes">
                                 </a>
                                 <div class="clear"></div>
                             </div>
@@ -733,7 +655,7 @@
                         <figure class="effect-overlay">
                             <div class="gallery-img">
                                 <a href="#" class="big">
-                                    <img src="./assets/images/portfolio/2.jpg" alt="" title="Camel Safari">
+                                    <img src="<?php echo get_template_directory_uri(); ?>./assets/images/portfolio/2.jpg" alt="" title="Camel Safari">
                                 </a>
                                 <div class="clear"></div>
                             </div>
@@ -752,7 +674,7 @@
                         <figure class="effect-overlay">
                             <div class="gallery-img">
                                 <a href="#" class="big">
-                                    <img src="./assets/images/portfolio/3.jpg" alt="" title="Our Cars with experienced drivers">
+                                    <img src="<?php echo get_template_directory_uri(); ?>./assets/images/portfolio/3.jpg" alt="" title="Our Cars with experienced drivers">
                                 </a>
                                 <div class="clear"></div>
                             </div>
@@ -771,7 +693,7 @@
                         <figure class="effect-overlay">
                             <div class="gallery-img">
                                 <a href="#" class="big">
-                                    <img src="./assets/images/portfolio/4.jpg" alt="" title="Sunset Point for Photography">
+                                    <img src="<?php echo get_template_directory_uri(); ?>./assets/images/portfolio/4.jpg" alt="" title="Sunset Point for Photography">
                                 </a>
                                 <div class="clear"></div>
                             </div>
@@ -790,7 +712,7 @@
                         <figure class="effect-overlay">
                             <div class="gallery-img">
                                 <a href="#" class="big">
-                                    <img src="./assets/images/portfolio/5.jpg" alt="" title="Photography with Falcon">
+                                    <img src="<?php echo get_template_directory_uri(); ?>./assets/images/portfolio/5.jpg" alt="" title="Photography with Falcon">
                                 </a>
                                 <div class="clear"></div>
                             </div>
@@ -809,7 +731,7 @@
                         <figure class="effect-overlay">
                             <div class="gallery-img">
                                 <a href="#" class="big">
-                                    <img src="./assets/images/portfolio/6.jpg" alt="" title="Camp Activities for Kids">
+                                    <img src="<?php echo get_template_directory_uri(); ?>./assets/images/portfolio/6.jpg" alt="" title="Camp Activities for Kids">
                                 </a>
                                 <div class="clear"></div>
                             </div>
@@ -828,7 +750,7 @@
                         <figure class="effect-overlay">
                             <div class="gallery-img">
                                 <a href="#" class="big">
-                                    <img src="./assets/images/portfolio/7.jpg" alt="" title="Fleet of Cars">
+                                    <img src="<?php echo get_template_directory_uri(); ?>./assets/images/portfolio/7.jpg" alt="" title="Fleet of Cars">
                                 </a>
                                 <div class="clear"></div>
                             </div>
@@ -847,7 +769,7 @@
                         <figure class="effect-overlay">
                             <div class="gallery-img">
                                 <a href="#" class="big">
-                                    <img src="./assets/images/portfolio/8.jpg" alt="" title="Extreme Adventure Safari">
+                                    <img src="<?php echo get_template_directory_uri(); ?>./assets/images/portfolio/8.jpg" alt="" title="Extreme Adventure Safari">
                                 </a>
                                 <div class="clear"></div>
                             </div>
@@ -887,7 +809,7 @@
                     <div class="owl-carousel">
                         <div class="famous-card">
                             <img alt="JADEN SMITH" class="img-fluid rounded"
-                                src="./assets/images/famous-person/famous-person-02.jpg">
+                                src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-02.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">JADEN SMITH</div>
@@ -897,7 +819,7 @@
                         </div>
                         <div class="famous-card">
                             <img alt="LAURA MARANO" class="img-fluid rounded"
-                                src="./assets/images/famous-person/famous-person-01.jpg">
+                                src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-01.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">LAURA MARANO</div>
@@ -906,7 +828,7 @@
                             </div>
                         </div>
                         <div class="famous-card">
-                            <img alt="WILL SMITH" class="img-fluid rounded" src="./assets/images/famous-person/famous-person-04.jpg">
+                            <img alt="WILL SMITH" class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-04.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">WILL SMITH</div>
@@ -916,7 +838,7 @@
                         </div>
                         <div class="famous-card">
                             <img alt="KYLIE MINOGUE" class="img-fluid rounded"
-                                src="./assets/images/famous-person/famous-person-13.jpg">
+                                src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-13.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">KYLIE MINOGUE</div>
@@ -927,7 +849,7 @@
                         </div>
                         <div class="famous-card">
                             <img alt="TED GINN, JR." class="img-fluid rounded"
-                                src="./assets/images/famous-person/famous-person-14.jpg">
+                                src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-14.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">TED GINN, JR.</div>
@@ -936,7 +858,7 @@
                             </div>
                         </div>
                         <div class="famous-card">
-                            <img alt="RAJON RONDO" class="img-fluid rounded" src="./assets/images/famous-person/famous-person-17.jpg">
+                            <img alt="RAJON RONDO" class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-17.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">RAJON RONDO</div>
@@ -946,7 +868,7 @@
                         </div>
                         <div class="famous-card">
                             <img alt="REBEL WILSON" class="img-fluid rounded"
-                                src="./assets/images/famous-person/famous-person-09.jpg">
+                                src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-09.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">REBEL WILSON</div>
@@ -958,7 +880,7 @@
                             </div>
                         </div>
                         <div class="famous-card">
-                            <img alt="MICHAEL BUBLE" class="img-fluid rounded" src="./assets/images/famous-person/famous-person-12.jpg">
+                            <img alt="MICHAEL BUBLE" class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-12.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">MICHAEL BUBLE</div>
@@ -967,7 +889,7 @@
                             </div>
                         </div>
                         <div class="famous-card">
-                            <img alt="RICKY MARTIN" class="img-fluid rounded" src="./assets/images/famous-person/famous-person-10.jpg">
+                            <img alt="RICKY MARTIN" class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-10.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">RICKY MARTIN</div>
@@ -976,7 +898,7 @@
                             </div>
                         </div>
                         <div class="famous-card">
-                            <img alt="JASON DERULO" class="img-fluid rounded" src="./assets/images/famous-person/famous-person-18.jpg">
+                            <img alt="JASON DERULO" class="img-fluid rounded" src="<?php echo get_template_directory_uri(); ?>./assets/images/famous-person/famous-person-18.jpg">
                             <div class="famous-overlay"></div>
                             <div class="famous-info">
                                 <div class="famous-name">JASON DERULO</div>
@@ -994,101 +916,9 @@
             </div>
         </div>
     </section>
-    
-    <!-- Footer Section -->
-    <footer id="footer">
-        <div class="container-xxl px-lg-5 px-sm-4 px-3">
-            <div class="row m-0 justify-content-evenly">
-                <div class="col-md-4 px-lg-4 mb-md-0 mb-2">
-                    <div class="heading-title">
-                        <h5>About Us</h5>
-                    </div>
-                    <div class="about-content">
-                        <p>You have come to the right place if you are looking for a thrill, fun, and ultimate outdoor adventure entertainment. Desert Safari Dubai is all this, plus much more.Enjoy the desert safari with your friends, family, or colleagues in Dubai’s vast and mesmerizing desert.</p>
-                    </div>
-                </div>
-                <div class="col-md-4 px-lg-4 mb-md-0 mb-2">
-                    <div class="heading-title">
-                        <h5>Contact</h5>
-                    </div>
-                    <div class="contact-content">
-                        <div class="content-item address">
-                            <a href="#google-map-viewport">
-                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M21.3046 4.69335C21.908 3.41959 20.5806 2.09225 19.3069 2.69561L2.83473 10.4982C1.56185 11.1011 1.74664 12.9674 3.11305 13.309L9.17556 14.8247L10.6912 20.8872C11.0328 22.2536 12.8991 22.4384 13.502 21.1655L21.3046 4.69335Z" fill="inherit"/>
-                                </svg>
-                                Russia V04 – Shop no V 034 – International City – Dubai – United Arab Emirates
-                            </a>
-                        </div>
-                        <div class="content-item phone">
-                            <a href="#">
-                                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"/></svg>
-                                +1-541-754-3010
-                            </a>
-                        </div>
-                        <div class="content-item whatsapp">
-                            <a href="#">
-                                <svg viewBox="0 0 24 24" version="1.1" id="svg8" xmlns="http://www.w3.org/2000/svg">
-                                    <path id="path4" d="M16.6,14c-0.2-0.1-1.5-0.7-1.7-0.8c-0.2-0.1-0.4-0.1-0.6,0.1c-0.2,0.2-0.6,0.8-0.8,1c-0.1,0.2-0.3,0.2-0.5,0.1c-0.7-0.3-1.4-0.7-2-1.2c-0.5-0.5-1-1.1-1.4-1.7c-0.1-0.2,0-0.4,0.1-0.5c0.1-0.1,0.2-0.3,0.4-0.4c0.1-0.1,0.2-0.3,0.2-0.4c0.1-0.1,0.1-0.3,0-0.4c-0.1-0.1-0.6-1.3-0.8-1.8C9.4,7.3,9.2,7.3,9,7.3c-0.1,0-0.3,0-0.5,0C8.3,7.3,8,7.5,7.9,7.6C7.3,8.2,7,8.9,7,9.7c0.1,0.9,0.4,1.8,1,2.6c1.1,1.6,2.5,2.9,4.2,3.7c0.5,0.2,0.9,0.4,1.4,0.5c0.5,0.2,1,0.2,1.6,0.1c0.7-0.1,1.3-0.6,1.7-1.2c0.2-0.4,0.2-0.8,0.1-1.2C17,14.2,16.8,14.1,16.6,14 M19.1,4.9C15.2,1,8.9,1,5,4.9c-3.2,3.2-3.8,8.1-1.6,12L2,22l5.3-1.4c1.5,0.8,3.1,1.2,4.7,1.2h0c5.5,0,9.9-4.4,9.9-9.9C22,9.3,20.9,6.8,19.1,4.9 M16.4,18.9c-1.3,0.8-2.8,1.3-4.4,1.3h0c-1.5,0-2.9-0.4-4.2-1.1l-0.3-0.2l-3.1,0.8l0.8-3l-0.2-0.3C2.6,12.4,3.8,7.4,7.7,4.9S16.6,3.7,19,7.5C21.4,11.4,20.3,16.5,16.4,18.9"/></svg>
-                                +1-541-754-3010
-                            </a>
-                        </div>
-                        <div class="content-item email">
-                            <a href="#">
-                                <svg fill="inherit" version="1.1" baseProfile="tiny" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" viewBox="-0.5 0.5 42 42" xml:space="preserve">
-                                <path d="M40.5,31.5v-18c0,0-18.2,12.7-19.97,13.359C18.79,26.23,0.5,13.5,0.5,13.5v18c0,2.5,0.53,3,3,3h34
-                                    C40.029,34.5,40.5,34.061,40.5,31.5z M40.471,9.971c0-1.821-0.531-2.471-2.971-2.471h-34c-2.51,0-3,0.78-3,2.6l0.03,0.28
-                                    c0,0,18.069,12.44,20,13.12C22.57,22.71,40.5,10.1,40.5,10.1L40.471,9.971z"/>
-                                </svg>
-                                tryo@envyuae.com
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 px-lg-4 mb-md-0 mb-2">
-                    <div class="heading-title">
-                        <h5>Payment Methods</h5>
-                    </div>
-                    <div class="payment-methods-content">
-                        <div class="content-item pick-up">
-                            <img src="./assets/images/pick-up.png" alt="Payment Methods">
-                        </div>
-                        <div class="content-item payment-channels">
-                        </div>
-                    </div>
-                    <div class="heading-title">
-                        <h5>Payment Channels</h5>
-                    </div>
-                    <div class="content-item payment-channels">
-                        <ul>
-                            <li style="background-image:url(./assets/images/payment-channels/Payment_Visa.webp);"></li>
-                            <li style="background-image:url(./assets/images/payment-channels/credit-mastercard.webp);"></li>
-                            <li style="background-image:url(./assets/images/payment-channels/methed-Amex.webp);"></li>
-                            <li style="background-image:url(./assets/images/payment-channels/credit-jcb.webp);"></li>
-                            <li style="background-image:url(./assets/images/payment-channels/credit-union.webp);"></li>
-                            <li style="background-image:url(./assets/images/payment-channels/methed-Discover.webp);"></li>
-                            <li style="background-image:url(./assets/images/payment-channels/methed-Diners.webp);"></li>
-                            <li style="background-image:url(./assets/images/payment-channels/apple-pay.webp);"></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
-    <!-- Bootstrap Js -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
-    <script src="./assets/bootstrap.bundle.min.js"></script>
+<?php
+    // Footer Section
+    get_template_part( 'template-parts/footer/footer', 'layout-1' );
 
-    <!-- jQuery -->
-    <script src="./assets/scripts/jquery-3.7.1.min.js"></script>
-
-    <!-- Owl Carousel JS -->
-    <script src="./assets/plugins/OwlCarousel2/owl.carousel.min.js"></script>
-
-    <!-- App Js -->
-    <script src="./assets/scripts/app.js"></script>
-</body>
-</html>
+    get_footer();

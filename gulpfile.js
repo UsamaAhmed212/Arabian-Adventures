@@ -18,7 +18,7 @@ var buildDirectory = "./";
 var path = {
     src: {
         dir: buildDirectory,
-        pages: `${sourceDirectory}**/*.html`,
+        pages: `${sourceDirectory}**/*.{html,php}`,
         styles: `${sourceDirectory}assets/styles/scss/**/*.scss`,
         scripts: `${sourceDirectory}assets/scripts/**/*.js`,
         plugins: `${sourceDirectory}plugins/**/*`

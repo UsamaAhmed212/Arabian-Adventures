@@ -40,7 +40,7 @@
                         <nav class="navbar navbar-expand-lg py-1">
                             <div class="container-fluid p-0">
                                 <a class="navbar-brand" href="#">
-                                    <img src="./assets/images/arabian-adventure-desert.png" alt="Logo">
+                                    <img src="<?php echo get_template_directory_uri(); ?>./assets/images/arabian-adventure-desert.png" alt="Logo">
                                 </a>
 
                                 <div id="menu-toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -106,19 +106,19 @@
                 <div class="col p-0">
                     <div class="media-items-wrapper">
                         <div class="media-item div1">
-                            <img src="./assets/images/dubai-aquarium---underwater-zoo---burj-khalifa-combo-01.jpg" alt="aquarium underwater">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/dubai-aquarium---underwater-zoo---burj-khalifa-combo-01.jpg" alt="aquarium underwater">
                         </div>
                         <div class="media-item div2">
-                            <img src="./assets/images/DubaiFountainlakeRide.jpeg" alt="fountain lake ride">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/DubaiFountainlakeRide.jpeg" alt="fountain lake ride">
                         </div>
                         <div class="media-item div3">
-                            <img src="./assets/images/dubai-burj-khalifa-at-the-top.jpeg" alt="burj khalifa at the top">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/dubai-burj-khalifa-at-the-top.jpeg" alt="burj khalifa at the top">
                         </div>
                         <div class="media-item div4">
-                            <img src="./assets/images/dubai-aquarium---underwater-zoo---burj-khalifa-combo-02.jpg" alt="aquarium underwater">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/dubai-aquarium---underwater-zoo---burj-khalifa-combo-02.jpg" alt="aquarium underwater">
                         </div>
                         <div class="media-item div5">
-                            <img src="./assets/images/dubai-dubai-aquarium---underwater-zoo---burj-khalifa-combo-03.jpg" alt="aquarium underwater">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/dubai-dubai-aquarium---underwater-zoo---burj-khalifa-combo-03.jpg" alt="aquarium underwater">
                         </div>
                     </div>
                 </div>
@@ -183,7 +183,7 @@
                     <div class="SidebarWrapper">
                         <div class="bookingItineraryCard">
                             <div class="BannerContainer">
-                                <img src="./assets/images/dubai-aquarium---underwater-zoo---burj-khalifa-combo-01.jpg" alt="" srcset="">
+                                <img src="<?php echo get_template_directory_uri(); ?>./assets/images/dubai-aquarium---underwater-zoo---burj-khalifa-combo-01.jpg" alt="" srcset="">
                                 <div class="banner__GradientOverlay"></div>
                                 <h2 class="banner__Header">Combo (Save 1%): Burj Khalifa At The Top + Dubai Aquarium &amp; Underwater Zoo Tickets</h2>
                             </div>
@@ -275,7 +275,7 @@
                     </div>
                     <div class="payment-methods-content">
                         <div class="content-item pick-up">
-                            <img src="./assets/images/pick-up.png" alt="Payment Methods">
+                            <img src="<?php echo get_template_directory_uri(); ?>./assets/images/pick-up.png" alt="Payment Methods">
                         </div>
                         <div class="content-item payment-channels">
                         </div>
