@@ -15,28 +15,32 @@ defined( 'ABSPATH' ) || exit;
 define( 'ARABIAN_ADVENTURES_THEME_DIR', trailingslashit( get_template_directory() ) );
 define( 'ARABIAN_ADVENTURES_THEME_DIR_URI', trailingslashit( esc_url( get_template_directory_uri() ) ) );
 
-// Detect plugin. For Frontend Only
-require_once ABSPATH . 'wp-admin/includes/plugin.php';
+add_action( 'after_setup_theme', fn() => load_theme_textdomain( 'arabian_adventures', get_template_directory() . '/languages' ) );
 
-// Files Enqueue
-require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/enqueue.php';
-// require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-setup.php';
-// require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-options.php';
-require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/customizer/customize.php';
-// require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/tgm-plugin-activation/activation.php';
-// require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/breadcrumb.php';
+add_action( 'after_setup_theme', function() {
+    // Detect plugin. For Frontend Only
+    require_once ABSPATH . 'wp-admin/includes/plugin.php';
 
-// // Custom Post Type ( Integration ) Init
-// require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/custom-post-type/custom-post-type.php';
+    // Files Enqueue
+    require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/enqueue.php';
+    require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-setup/theme-setup.php';
+    // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-options.php';
+    require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/customizer/customize.php';
+    // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/tgm-plugin-activation/activation.php';
+    // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/breadcrumb.php';
 
-// // If the Elementor plugin is active
-// if ( is_plugin_active( 'elementor/elementor.php' ) ) {
-//     // Elementor ( Integration ) Init
-//     require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/elementor/elementor.php';
-// }
+    // // Custom Post Type ( Integration ) Init
+    // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/custom-post-type/custom-post-type.php';
 
-// // If the Contact Form 7 plugin is active
-// if ( is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
-//     // Contact Form 7 ( Integration ) Init
-//     require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/contact-form-7/contact-form-7.php';
-// }
+    // If the Elementor plugin is active
+    // if ( is_plugin_active( 'elementor/elementor.php' ) ) {
+    //     // Elementor ( Integration ) Init
+    //     require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/elementor/elementor.php';
+    // }
+    // // If the Contact Form 7 plugin is active
+    // if ( is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
+    //     // Contact Form 7 ( Integration ) Init
+    //     require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/contact-form-7/contact-form-7.php';
+    // }
+
+}, 20);

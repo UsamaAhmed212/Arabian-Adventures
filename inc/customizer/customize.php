@@ -13,7 +13,7 @@ function arabian_adventure_Customizer_register( $wp_customize ) {
     ********************************************************************/
 
     //Site Logo & Icon ( Site Identity ) Section Rename
-    $wp_customize->get_section('title_tagline')->title = __( 'Site Logo & Icon' );
+    $wp_customize->get_section('title_tagline')->title = __( 'Site Logo & Icon', 'arabian_adventure' );
 
     //Blog Name (Site Title) Remove
     $wp_customize->remove_control( 'blogname' );
@@ -233,7 +233,7 @@ function arabian_adventure_Customizer_register( $wp_customize ) {
     ) );
 
     $wp_customize->add_control( new Arabian_adventure_TinyMCE_Custom_control( $wp_customize, 'arabian_adventure_footer_copyright_text', array(
-            'label'       => __( 'Footer Copyright Control' ),
+            'label'       => __( 'Footer Copyright Control', 'arabian_adventure' ),
             // 'description' => __( '' ),
             'input_attrs' => array(
                 'toolbar1'      => 'formatselect | styleselect | bold italic strikethrough | forecolor backcolor | link | alignleft aligncenter alignright alignjustify | numlist bullist outdent indent | insert | fontsizeselect',

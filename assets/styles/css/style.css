@@ -49,6 +49,11 @@ html body {
   font-family: "Trip Sans VF", "Trip Sans", "Trip Sans Mono", Arial, sans-serif;
 }
 
+.elementor-element {
+  --display: unset !important;
+  padding: 0 !important;
+}
+
 #header #navbarNav ul li a {
   padding: 10px 16px;
   font-size: 16px;

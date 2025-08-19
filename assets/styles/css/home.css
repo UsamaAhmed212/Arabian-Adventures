@@ -375,7 +375,7 @@
   width: 100%;
   opacity: 0.8;
   max-width: none;
-  height: auto;
+  height: 235px;
   transition: opacity 1s, transform 1s;
   backface-visibility: hidden;
 }
@@ -409,6 +409,10 @@
   font-size: 68.5%;
   letter-spacing: 1px;
   opacity: 0.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
   transition: opacity 0.35s, transform 0.35s;
   transform: translate3d(-360px, 0, 0);
 }
