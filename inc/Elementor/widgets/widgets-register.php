@@ -14,4 +14,7 @@ if ( defined( 'ELEMENTOR_PATH' ) && class_exists( 'Elementor\Widget_Base' ) ) {
     // Images Gallery
     require_once( __DIR__ . '/image-gallery/image-gallery.php' );
     
+    // Celebrity Visits
+    require_once( __DIR__ . '/celebrity-visits/celebrity-visits.php' );
+
 }
