@@ -26,17 +26,17 @@ add_action( 'after_setup_theme', function() {
     require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-setup/theme-setup.php';
     // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-options.php';
     require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/customizer/customize.php';
-    // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/tgm-plugin-activation/activation.php';
+    require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/tgm-plugin-activation/activation.php';
     // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/breadcrumb.php';
 
     // // Custom Post Type ( Integration ) Init
     // require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/custom-post-type/custom-post-type.php';
 
     // If the Elementor plugin is active
-    // if ( is_plugin_active( 'elementor/elementor.php' ) ) {
-    //     // Elementor ( Integration ) Init
-    //     require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/elementor/elementor.php';
-    // }
+    if ( is_plugin_active( 'elementor/elementor.php' ) ) {
+        // Elementor ( Integration ) Init
+        require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/elementor/elementor.php';
+    }
     // // If the Contact Form 7 plugin is active
     // if ( is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
     //     // Contact Form 7 ( Integration ) Init

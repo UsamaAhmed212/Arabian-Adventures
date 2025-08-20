@@ -17,5 +17,10 @@ html body {
     font-family: "Trip Sans VF","Trip Sans","Trip Sans Mono",Arial,sans-serif;
 }
 
+.elementor-element {
+    --display: unset !important;
+    padding: 0 !important;
+}
+
 @include header;
 @include footer;
