@@ -11,6 +11,9 @@ if ( defined( 'ELEMENTOR_PATH' ) && class_exists( 'Elementor\Widget_Base' ) ) {
     // Adventures
     require_once( __DIR__ . '/adventures/adventures.php' );
     
+    // Tours
+    require_once( __DIR__ . '/tours/tours.php' );
+    
     // Images Gallery
     require_once( __DIR__ . '/image-gallery/image-gallery.php' );
     
