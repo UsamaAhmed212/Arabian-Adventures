@@ -607,6 +607,13 @@
                         </a>
                     </div>
                 </div>
+                <div class="col-12 mt-2 p-0 py-2">
+                    <div class="more-button">
+                        <a href="#">
+                            View all Desert Experiences 
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

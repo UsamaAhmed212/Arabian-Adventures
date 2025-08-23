@@ -7,7 +7,7 @@ defined( 'ABSPATH' ) || exit;
 add_theme_support( 'title-tag' );
 
 // Theme Thumbnails
-add_theme_support( 'post-thumbnails', array( 'page', 'post', 'portfolio' ) );
+add_theme_support( 'post-thumbnails', array( 'page', 'post', 'tours' ) );
 
 // Register Nav Menus
 require_once ARABIAN_ADVENTURES_THEME_DIR . 'inc/theme-setup/register-nav-menus.php';

@@ -13,8 +13,11 @@
         if ( has_site_icon()  && get_option( 'site_icon' ) ) { ?>
         <!-- Title Bar Logo -->
         <link rel="icon" href="<?php echo get_theme_mod( 'site_icon' ); ?>" type="image/png">
-    <?php }
-    
+    <?php } ?>
+
+    <title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
+
+    <?php 
     wp_head(); ?>
 </head>
 <body>

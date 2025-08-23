@@ -469,12 +469,12 @@ class Tours_Section_Widget extends Widget_Base {
                     <?php if ( ! empty( $settings['tours_repeater'] ) ) : ?>
                         <?php foreach ( $settings['tours_repeater'] as $item ) : ?>
                             <div class="col-lg-3 col-md-4 col-6 p-0 mb-3">
-                                <div class="tour">
-                                    <?php 
-                                        $this->remove_render_attribute( 'link' ); // Reset attributes
-                                        $this->add_link_attributes( 'link', $item['link'] ); 
-                                    ?>
-                                    <a <?php $this->print_render_attribute_string( 'link' ); ?>>
+                                <?php 
+                                    $this->remove_render_attribute( 'link' ); // Reset attributes
+                                    $this->add_link_attributes( 'link', $item['link'] ); 
+                                ?>
+                                <a <?php $this->print_render_attribute_string( 'link' ); ?>>
+                                    <div class="tour">
                                         <div class="thumbnail">
                                             <img src="<?php echo esc_url( $item['image']['url'] ?: Utils::get_placeholder_image_src() ); ?>" alt="">
                                             <span class="category"><?php echo esc_html( $item['category'] ); ?></span>
@@ -529,8 +529,8 @@ class Tours_Section_Widget extends Widget_Base {
                                                 </span>
                                             </div> -->
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                             </div>
                     <?php endforeach; endif; ?>
                 </div>
@@ -566,8 +566,8 @@ class Tours_Section_Widget extends Widget_Base {
 
                     <# if ( settings.tours_repeater.length ) { _.each( settings.tours_repeater, function( item ) { #>
                         <div class="col-lg-3 col-md-4 col-6 p-0 mb-3">
-                            <div class="tour">
-                                <a href="{{ item.link.url }}">
+                            <a href="{{ item.link.url }}">
+                                <div class="tour">
                                     <div class="thumbnail">
                                         <img src="{{ item.image.url ? item.image.url : '<?php echo Utils::get_placeholder_image_src(); ?>' }}" alt="">
                                         <span class="category">{{{ item.category }}}</span>
@@ -619,8 +619,8 @@ class Tours_Section_Widget extends Widget_Base {
                                             </span>
                                         </div> -->
                                     </div>
-                                </a>
-                            </div>
+                                </div>
+                            </a>
                         </div>
                     <# }); } #>
                 </div>

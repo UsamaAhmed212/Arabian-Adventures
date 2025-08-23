@@ -171,6 +171,11 @@
 
  /* Top Tours Area Css */
 .top-tours {
+    
+    a {
+        text-decoration: none;
+    }
+
     .tour {
         height: 100%;
         border: 1px solid #eee;
@@ -179,10 +184,6 @@
         margin: 0 7px;
         margin-bottom: 16px;
         transition: all .3s ease;
-
-        a {
-            text-decoration: none;
-        }
 
         .thumbnail {
             position: relative;

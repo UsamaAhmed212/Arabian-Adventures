@@ -35,6 +35,46 @@
   font-size: 16px;
 }
 
+.more-button {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.more-button a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  background: transparent;
+  color: #27412B;
+  border: 1.5px solid #27412B;
+  padding: 10px 32px;
+  border-radius: 32px;
+  outline: 0;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.more-button a:hover {
+  background: #ffb652;
+  border-color: #ffb652;
+  color: #fff;
+}
+@media (max-width: 767px) {
+  .more-button a {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
+  .more-button a {
+    width: 90%;
+  }
+}
+
 /* Slider Area Css */
 #slider {
   position: relative;
@@ -190,6 +230,9 @@
 }
 
 /* Top Tours Area Css */
+.top-tours a {
+  text-decoration: none;
+}
 .top-tours .tour {
   height: 100%;
   border: 1px solid #eee;
@@ -198,9 +241,6 @@
   margin: 0 7px;
   margin-bottom: 16px;
   transition: all 0.3s ease;
-}
-.top-tours .tour a {
-  text-decoration: none;
 }
 .top-tours .tour .thumbnail {
   position: relative;
