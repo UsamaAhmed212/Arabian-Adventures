@@ -79,7 +79,7 @@
 .page-title-header {
   color: #1A213D;
 }
-.page-title-header .page-title-category {
+.page-title-header .page-title-label {
   font-size: 15px;
 }
 .page-title-header .page-title_wrapper .page-title {
@@ -354,6 +354,7 @@
 }
 .flatpickr-calendar .flatpickr-innerContainer .flatpickr-days {
   user-select: none;
+  padding: 4px 0;
 }
 .flatpickr-calendar .flatpickr-innerContainer .flatpickr-days .flatpickr-day {
   border-radius: 4px;
@@ -569,6 +570,7 @@
 }
 .booking-assistant .SidebarWrapper .bookingItineraryCard .BannerContainer {
   position: relative;
+  min-height: 80px;
   overflow: hidden;
 }
 .booking-assistant .SidebarWrapper .bookingItineraryCard .BannerContainer img {
@@ -729,4 +731,4 @@
   border-color: #9f9f9f;
   color: #FFF;
 }
-/*# sourceMappingURL=page.css.map */
+/*# sourceMappingURL=single-page.css.map */

@@ -102,6 +102,13 @@ class CustomPostTypeTours {
      * Register all custom meta fields
      */
     function register_tour_meta() {
+        //  promo label
+        register_post_meta('tours', 'promo_label', [
+            'show_in_rest' => true,
+            'single' => true,
+            'type' => 'string',
+        ]);
+
         //  Label
         register_post_meta('tours', 'label', [
             'show_in_rest' => true,
@@ -158,7 +165,44 @@ class CustomPostTypeTours {
             'normal',
             'high'
         );
+
+        // New Images Meta Box
+        add_meta_box(
+            'tours_multi_images_meta_box',
+            __( 'Tour Images', 'textdomain' ),
+            array( $this, 'tours_multi_images_metabox_callback' ),
+            'tours',
+            'normal',
+            'default'
+        );
     }
+
+    /**
+     * Render Images Meta Box
+     */
+    function tours_multi_images_metabox_callback($post) {
+        wp_nonce_field('tours_meta_box', 'tours_meta_box_nonce');
+        $images = get_post_meta($post->ID, 'tours_images', true);
+        $images = $images ? explode(',', $images) : [];
+        ?>
+        <div id="tours-images-wrapper">
+            <button type="button" class="button" id="tours-images-upload">Upload Images</button>
+            <input type="hidden" id="tours-images-input" name="tours_images" value="<?php echo esc_attr(implode(',', $images)); ?>">
+            <div id="tours-images-preview" style="margin-top:10px;">
+                <?php foreach ($images as $img_id) : ?>
+                    <?php $src = wp_get_attachment_image_src($img_id, 'thumbnail'); ?>
+                    <?php if ($src) : ?>
+                        <div class="tours-image-item" data-id="<?php echo esc_attr($img_id); ?>" style="display:inline-block;position:relative;margin:3px;">
+                            <img src="<?php echo esc_url($src[0]); ?>" style="height:auto;">
+                            <span class="tours-remove-image" style="position:absolute;top:0;right:0;background:#000;color:#fff;padding:2px 5px;cursor:pointer;">✕</span>
+                        </div>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <?php
+    }
+
 
     /**
      * Define all meta fields for the 'tours' custom post type.
@@ -168,11 +212,12 @@ class CustomPostTypeTours {
      */
     public static function get_meta_fields() {
         return [
-            'label'     => 'Enter tour label',
-            'duration'  => 'Enter duration (e.g., 4-6 hours)',
-            'old_price' => 'Enter old price (e.g., 150 AED)',
-            'price'     => 'Enter current price (e.g., 99.5 AED)',
-            'caption'   => 'Enter caption (e.g., per person)',
+            'promo_label' => 'Enter tour promo label',
+            'label'       => 'Enter tour label',
+            'duration'    => 'Enter duration (e.g., 4-6 hours)',
+            'old_price'   => 'Enter old price (e.g., 150 AED)',
+            'price'       => 'Enter current price (e.g., 99.5 AED)',
+            'caption'     => 'Enter caption (e.g., per person)',
         ];
     }
 
@@ -213,6 +258,10 @@ class CustomPostTypeTours {
             if (isset($_POST[$field])) {
                 update_post_meta($post_id, $field, sanitize_text_field($_POST[$field]));
             }
+        }
+        
+        if (isset($_POST['tours_images'])) {
+            update_post_meta($post_id, 'tours_images', sanitize_text_field($_POST['tours_images']));
         }
     }
 

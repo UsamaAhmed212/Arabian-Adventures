@@ -7,7 +7,7 @@
 .page-title-header {
     color: #1A213D;
 
-    .page-title-category {
+    .page-title-label {
         font-size: 15px;
     }
 
@@ -352,6 +352,7 @@
 
                     .flatpickr-days {
                         user-select: none;
+                        padding: 4px 0;
 
                         .flatpickr-day {
                             border-radius: $border-radius;
@@ -625,6 +626,7 @@
 
             .BannerContainer {
                 position: relative;
+                min-height: 80px;
                 overflow: hidden;
 
                 img {

@@ -179,8 +179,6 @@ jQuery(document).ready(function ($) {
             // Insert after input
             insertInputField.insertAdjacentElement("afterend", container);
 
-            console.log(instance);
-
             // Click handlers for each button
             container.querySelectorAll(".DateListItem").forEach(btn => {
                 btn.addEventListener("click", () => {

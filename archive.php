@@ -41,23 +41,29 @@
             <div class="container-xxl px-lg-5 px-sm-4 px-3">
                 <div class="row m-0 justify-content-around">
                     <!-- card -->
-                <?php while ($tours->have_posts()) : $tours->the_post(); 
-                    // Get meta fields
-                    $label     = get_post_meta(get_the_ID(), 'label', true);
-                    $duration  = get_post_meta(get_the_ID(), 'duration', true);
-                    $old_price = get_post_meta(get_the_ID(), 'old_price', true);
-                    $price     = get_post_meta(get_the_ID(), 'price', true);
-                    $caption   = get_post_meta(get_the_ID(), 'caption', true);
+                    <?php while ($tours->have_posts()) : $tours->the_post(); 
+                        // Get meta fields
+                        $label     = get_post_meta(get_the_ID(), 'label', true);
+                        $duration  = get_post_meta(get_the_ID(), 'duration', true);
+                        $old_price = get_post_meta(get_the_ID(), 'old_price', true);
+                        $price     = get_post_meta(get_the_ID(), 'price', true);
+                        $caption   = get_post_meta(get_the_ID(), 'caption', true);
 
-                    // Get taxonomy terms
-                    $categories = get_the_terms(get_the_ID(), 'tours_category'); // Categories
-                    $tags       = get_the_terms(get_the_ID(), 'tours_tag');      // Tags
-                ?>
+                        // Get taxonomy terms
+                        $categories = get_the_terms(get_the_ID(), 'tours_category'); // Categories
+                        $tags       = get_the_terms(get_the_ID(), 'tours_tag');      // Tags
+                    ?>
                     <div class="col-lg-3 col-md-4 col-6 p-0 mb-3">
                         <a href="<?php the_permalink(); ?>" target="_blank" rel="noopener noreferrer">
                             <div class="tour">
                                 <div class="thumbnail">
-                                    <?php if(has_post_thumbnail()) the_post_thumbnail('full'); ?>
+                                    <?php if ( has_post_thumbnail() ) : ?>
+                                        <img 
+                                            src="<?php echo esc_url( get_the_post_thumbnail_url( get_the_ID(), 'full' ) ); ?>" 
+                                            alt="<?php echo esc_attr( get_the_title() ); ?>" 
+                                            class=""
+                                        >
+                                    <?php endif; ?>
                                     <?php if($categories && !is_wp_error($categories)) : 
                                         $last_category = end($categories); 
                                     ?>

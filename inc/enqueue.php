@@ -49,6 +49,11 @@ function arabian_adventures_css_js_enqueue() {
     wp_register_style( 'arabian_adventures-home-style', ARABIAN_ADVENTURES_THEME_DIR_URI . 'assets/styles/css/home.css', array(), '1.0.0', 'all' );
     wp_enqueue_style( 'arabian_adventures-home-style' );
 
+
+    // single-Page Css Enqueue
+    wp_register_style( 'arabian_adventures-single-page-style', ARABIAN_ADVENTURES_THEME_DIR_URI . 'assets/styles/css/single-page.css', array(), '1.0.0', 'all' );
+    wp_enqueue_style( 'arabian_adventures-single-page-style' );
+
     
     // Responsive Css Enqueue
     wp_register_style( 'arabian_adventures-responsive', ARABIAN_ADVENTURES_THEME_DIR_URI . 'assets/styles/css/responsive.css', array(), '1.0.0', 'all' );
